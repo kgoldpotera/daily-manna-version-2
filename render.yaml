@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: daily-manna-api
+    env: python
+    buildCommand: python -m pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: OPENAI_API_KEY
+        value: your-openai-key
+      - key: SUPABASE_URL
+        value: https://your-supabase-project-url
+      - key: SUPABASE_SERVICE_KEY
+        value: your-service-role-key
+      - key: WHATSAPP_API_URL
+        value: https://api.ultramsg.com/<your-id>/messages
+      - key: WHATSAPP_INSTANCE_ID
+        value: your-instance-id
+      - key: WHATSAPP_TOKEN
+        value: your-api-token

@@ -1,0 +1,2557 @@
+[
+  {
+    "day": 1,
+    "date": "January 01",
+    "old_testament": "Genesis 1",
+    "new_testament": "Matthew 1",
+    "psalm_or_gospel": "Psalm 1"
+  },
+  {
+    "day": 2,
+    "date": "January 02",
+    "old_testament": "Exodus 2",
+    "new_testament": "Mark 2",
+    "psalm_or_gospel": "Psalm 2"
+  },
+  {
+    "day": 3,
+    "date": "January 03",
+    "old_testament": "Leviticus 3",
+    "new_testament": "Luke 3",
+    "psalm_or_gospel": "Psalm 3"
+  },
+  {
+    "day": 4,
+    "date": "January 04",
+    "old_testament": "Numbers 4",
+    "new_testament": "John 4",
+    "psalm_or_gospel": "Psalm 4"
+  },
+  {
+    "day": 5,
+    "date": "January 05",
+    "old_testament": "Deuteronomy 5",
+    "new_testament": "Acts 5",
+    "psalm_or_gospel": "Psalm 5"
+  },
+  {
+    "day": 6,
+    "date": "January 06",
+    "old_testament": "Joshua 6",
+    "new_testament": "Romans 1",
+    "psalm_or_gospel": "Psalm 6"
+  },
+  {
+    "day": 7,
+    "date": "January 07",
+    "old_testament": "Judges 7",
+    "new_testament": "1 Corinthians 2",
+    "psalm_or_gospel": "Psalm 7"
+  },
+  {
+    "day": 8,
+    "date": "January 08",
+    "old_testament": "Ruth 8",
+    "new_testament": "2 Corinthians 3",
+    "psalm_or_gospel": "Psalm 8"
+  },
+  {
+    "day": 9,
+    "date": "January 09",
+    "old_testament": "1 Samuel 9",
+    "new_testament": "Galatians 4",
+    "psalm_or_gospel": "Psalm 9"
+  },
+  {
+    "day": 10,
+    "date": "January 10",
+    "old_testament": "2 Samuel 10",
+    "new_testament": "Ephesians 5",
+    "psalm_or_gospel": "Psalm 10"
+  },
+  {
+    "day": 11,
+    "date": "January 11",
+    "old_testament": "1 Kings 1",
+    "new_testament": "Philippians 1",
+    "psalm_or_gospel": "Psalm 11"
+  },
+  {
+    "day": 12,
+    "date": "January 12",
+    "old_testament": "2 Kings 2",
+    "new_testament": "Colossians 2",
+    "psalm_or_gospel": "Psalm 12"
+  },
+  {
+    "day": 13,
+    "date": "January 13",
+    "old_testament": "1 Chronicles 3",
+    "new_testament": "1 Thessalonians 3",
+    "psalm_or_gospel": "Psalm 13"
+  },
+  {
+    "day": 14,
+    "date": "January 14",
+    "old_testament": "2 Chronicles 4",
+    "new_testament": "2 Thessalonians 4",
+    "psalm_or_gospel": "Psalm 14"
+  },
+  {
+    "day": 15,
+    "date": "January 15",
+    "old_testament": "Ezra 5",
+    "new_testament": "1 Timothy 5",
+    "psalm_or_gospel": "Psalm 15"
+  },
+  {
+    "day": 16,
+    "date": "January 16",
+    "old_testament": "Nehemiah 6",
+    "new_testament": "2 Timothy 1",
+    "psalm_or_gospel": "Psalm 16"
+  },
+  {
+    "day": 17,
+    "date": "January 17",
+    "old_testament": "Esther 7",
+    "new_testament": "Titus 2",
+    "psalm_or_gospel": "Psalm 17"
+  },
+  {
+    "day": 18,
+    "date": "January 18",
+    "old_testament": "Job 8",
+    "new_testament": "Philemon 3",
+    "psalm_or_gospel": "Psalm 18"
+  },
+  {
+    "day": 19,
+    "date": "January 19",
+    "old_testament": "Psalms 9",
+    "new_testament": "Hebrews 4",
+    "psalm_or_gospel": "Psalm 19"
+  },
+  {
+    "day": 20,
+    "date": "January 20",
+    "old_testament": "Proverbs 10",
+    "new_testament": "James 5",
+    "psalm_or_gospel": "Psalm 20"
+  },
+  {
+    "day": 21,
+    "date": "January 21",
+    "old_testament": "Ecclesiastes 1",
+    "new_testament": "1 Peter 1",
+    "psalm_or_gospel": "Psalm 21"
+  },
+  {
+    "day": 22,
+    "date": "January 22",
+    "old_testament": "Song of Songs 2",
+    "new_testament": "2 Peter 2",
+    "psalm_or_gospel": "Psalm 22"
+  },
+  {
+    "day": 23,
+    "date": "January 23",
+    "old_testament": "Isaiah 3",
+    "new_testament": "1 John 3",
+    "psalm_or_gospel": "Psalm 23"
+  },
+  {
+    "day": 24,
+    "date": "January 24",
+    "old_testament": "Jeremiah 4",
+    "new_testament": "2 John 4",
+    "psalm_or_gospel": "Psalm 24"
+  },
+  {
+    "day": 25,
+    "date": "January 25",
+    "old_testament": "Lamentations 5",
+    "new_testament": "3 John 5",
+    "psalm_or_gospel": "Psalm 25"
+  },
+  {
+    "day": 26,
+    "date": "January 26",
+    "old_testament": "Ezekiel 6",
+    "new_testament": "Jude 1",
+    "psalm_or_gospel": "Psalm 26"
+  },
+  {
+    "day": 27,
+    "date": "January 27",
+    "old_testament": "Daniel 7",
+    "new_testament": "Revelation 2",
+    "psalm_or_gospel": "Psalm 27"
+  },
+  {
+    "day": 28,
+    "date": "January 28",
+    "old_testament": "Hosea 8",
+    "new_testament": "Matthew 3",
+    "psalm_or_gospel": "Psalm 28"
+  },
+  {
+    "day": 29,
+    "date": "January 29",
+    "old_testament": "Joel 9",
+    "new_testament": "Mark 4",
+    "psalm_or_gospel": "Psalm 29"
+  },
+  {
+    "day": 30,
+    "date": "January 30",
+    "old_testament": "Amos 10",
+    "new_testament": "Luke 5",
+    "psalm_or_gospel": "Psalm 30"
+  },
+  {
+    "day": 31,
+    "date": "January 31",
+    "old_testament": "Obadiah 1",
+    "new_testament": "John 1",
+    "psalm_or_gospel": "Psalm 31"
+  },
+  {
+    "day": 32,
+    "date": "February 01",
+    "old_testament": "Jonah 2",
+    "new_testament": "Acts 2",
+    "psalm_or_gospel": "Psalm 32"
+  },
+  {
+    "day": 33,
+    "date": "February 02",
+    "old_testament": "Micah 3",
+    "new_testament": "Romans 3",
+    "psalm_or_gospel": "Psalm 33"
+  },
+  {
+    "day": 34,
+    "date": "February 03",
+    "old_testament": "Nahum 4",
+    "new_testament": "1 Corinthians 4",
+    "psalm_or_gospel": "Psalm 34"
+  },
+  {
+    "day": 35,
+    "date": "February 04",
+    "old_testament": "Habakkuk 5",
+    "new_testament": "2 Corinthians 5",
+    "psalm_or_gospel": "Psalm 35"
+  },
+  {
+    "day": 36,
+    "date": "February 05",
+    "old_testament": "Zephaniah 6",
+    "new_testament": "Galatians 1",
+    "psalm_or_gospel": "Psalm 36"
+  },
+  {
+    "day": 37,
+    "date": "February 06",
+    "old_testament": "Haggai 7",
+    "new_testament": "Ephesians 2",
+    "psalm_or_gospel": "Psalm 37"
+  },
+  {
+    "day": 38,
+    "date": "February 07",
+    "old_testament": "Zechariah 8",
+    "new_testament": "Philippians 3",
+    "psalm_or_gospel": "Psalm 38"
+  },
+  {
+    "day": 39,
+    "date": "February 08",
+    "old_testament": "Malachi 9",
+    "new_testament": "Colossians 4",
+    "psalm_or_gospel": "Psalm 39"
+  },
+  {
+    "day": 40,
+    "date": "February 09",
+    "old_testament": "Genesis 10",
+    "new_testament": "1 Thessalonians 5",
+    "psalm_or_gospel": "Psalm 40"
+  },
+  {
+    "day": 41,
+    "date": "February 10",
+    "old_testament": "Exodus 1",
+    "new_testament": "2 Thessalonians 1",
+    "psalm_or_gospel": "Psalm 41"
+  },
+  {
+    "day": 42,
+    "date": "February 11",
+    "old_testament": "Leviticus 2",
+    "new_testament": "1 Timothy 2",
+    "psalm_or_gospel": "Psalm 42"
+  },
+  {
+    "day": 43,
+    "date": "February 12",
+    "old_testament": "Numbers 3",
+    "new_testament": "2 Timothy 3",
+    "psalm_or_gospel": "Psalm 43"
+  },
+  {
+    "day": 44,
+    "date": "February 13",
+    "old_testament": "Deuteronomy 4",
+    "new_testament": "Titus 4",
+    "psalm_or_gospel": "Psalm 44"
+  },
+  {
+    "day": 45,
+    "date": "February 14",
+    "old_testament": "Joshua 5",
+    "new_testament": "Philemon 5",
+    "psalm_or_gospel": "Psalm 45"
+  },
+  {
+    "day": 46,
+    "date": "February 15",
+    "old_testament": "Judges 6",
+    "new_testament": "Hebrews 1",
+    "psalm_or_gospel": "Psalm 46"
+  },
+  {
+    "day": 47,
+    "date": "February 16",
+    "old_testament": "Ruth 7",
+    "new_testament": "James 2",
+    "psalm_or_gospel": "Psalm 47"
+  },
+  {
+    "day": 48,
+    "date": "February 17",
+    "old_testament": "1 Samuel 8",
+    "new_testament": "1 Peter 3",
+    "psalm_or_gospel": "Psalm 48"
+  },
+  {
+    "day": 49,
+    "date": "February 18",
+    "old_testament": "2 Samuel 9",
+    "new_testament": "2 Peter 4",
+    "psalm_or_gospel": "Psalm 49"
+  },
+  {
+    "day": 50,
+    "date": "February 19",
+    "old_testament": "1 Kings 10",
+    "new_testament": "1 John 5",
+    "psalm_or_gospel": "Psalm 50"
+  },
+  {
+    "day": 51,
+    "date": "February 20",
+    "old_testament": "2 Kings 1",
+    "new_testament": "2 John 1",
+    "psalm_or_gospel": "Psalm 51"
+  },
+  {
+    "day": 52,
+    "date": "February 21",
+    "old_testament": "1 Chronicles 2",
+    "new_testament": "3 John 2",
+    "psalm_or_gospel": "Psalm 52"
+  },
+  {
+    "day": 53,
+    "date": "February 22",
+    "old_testament": "2 Chronicles 3",
+    "new_testament": "Jude 3",
+    "psalm_or_gospel": "Psalm 53"
+  },
+  {
+    "day": 54,
+    "date": "February 23",
+    "old_testament": "Ezra 4",
+    "new_testament": "Revelation 4",
+    "psalm_or_gospel": "Psalm 54"
+  },
+  {
+    "day": 55,
+    "date": "February 24",
+    "old_testament": "Nehemiah 5",
+    "new_testament": "Matthew 5",
+    "psalm_or_gospel": "Psalm 55"
+  },
+  {
+    "day": 56,
+    "date": "February 25",
+    "old_testament": "Esther 6",
+    "new_testament": "Mark 1",
+    "psalm_or_gospel": "Psalm 56"
+  },
+  {
+    "day": 57,
+    "date": "February 26",
+    "old_testament": "Job 7",
+    "new_testament": "Luke 2",
+    "psalm_or_gospel": "Psalm 57"
+  },
+  {
+    "day": 58,
+    "date": "February 27",
+    "old_testament": "Psalms 8",
+    "new_testament": "John 3",
+    "psalm_or_gospel": "Psalm 58"
+  },
+  {
+    "day": 59,
+    "date": "February 28",
+    "old_testament": "Proverbs 9",
+    "new_testament": "Acts 4",
+    "psalm_or_gospel": "Psalm 59"
+  },
+  {
+    "day": 60,
+    "date": "February 29",
+    "old_testament": "Ecclesiastes 10",
+    "new_testament": "Romans 5",
+    "psalm_or_gospel": "Psalm 60"
+  },
+  {
+    "day": 61,
+    "date": "March 01",
+    "old_testament": "Song of Songs 1",
+    "new_testament": "1 Corinthians 1",
+    "psalm_or_gospel": "Psalm 61"
+  },
+  {
+    "day": 62,
+    "date": "March 02",
+    "old_testament": "Isaiah 2",
+    "new_testament": "2 Corinthians 2",
+    "psalm_or_gospel": "Psalm 62"
+  },
+  {
+    "day": 63,
+    "date": "March 03",
+    "old_testament": "Jeremiah 3",
+    "new_testament": "Galatians 3",
+    "psalm_or_gospel": "Psalm 63"
+  },
+  {
+    "day": 64,
+    "date": "March 04",
+    "old_testament": "Lamentations 4",
+    "new_testament": "Ephesians 4",
+    "psalm_or_gospel": "Psalm 64"
+  },
+  {
+    "day": 65,
+    "date": "March 05",
+    "old_testament": "Ezekiel 5",
+    "new_testament": "Philippians 5",
+    "psalm_or_gospel": "Psalm 65"
+  },
+  {
+    "day": 66,
+    "date": "March 06",
+    "old_testament": "Daniel 6",
+    "new_testament": "Colossians 1",
+    "psalm_or_gospel": "Psalm 66"
+  },
+  {
+    "day": 67,
+    "date": "March 07",
+    "old_testament": "Hosea 7",
+    "new_testament": "1 Thessalonians 2",
+    "psalm_or_gospel": "Psalm 67"
+  },
+  {
+    "day": 68,
+    "date": "March 08",
+    "old_testament": "Joel 8",
+    "new_testament": "2 Thessalonians 3",
+    "psalm_or_gospel": "Psalm 68"
+  },
+  {
+    "day": 69,
+    "date": "March 09",
+    "old_testament": "Amos 9",
+    "new_testament": "1 Timothy 4",
+    "psalm_or_gospel": "Psalm 69"
+  },
+  {
+    "day": 70,
+    "date": "March 10",
+    "old_testament": "Obadiah 10",
+    "new_testament": "2 Timothy 5",
+    "psalm_or_gospel": "Psalm 70"
+  },
+  {
+    "day": 71,
+    "date": "March 11",
+    "old_testament": "Jonah 1",
+    "new_testament": "Titus 1",
+    "psalm_or_gospel": "Psalm 71"
+  },
+  {
+    "day": 72,
+    "date": "March 12",
+    "old_testament": "Micah 2",
+    "new_testament": "Philemon 2",
+    "psalm_or_gospel": "Psalm 72"
+  },
+  {
+    "day": 73,
+    "date": "March 13",
+    "old_testament": "Nahum 3",
+    "new_testament": "Hebrews 3",
+    "psalm_or_gospel": "Psalm 73"
+  },
+  {
+    "day": 74,
+    "date": "March 14",
+    "old_testament": "Habakkuk 4",
+    "new_testament": "James 4",
+    "psalm_or_gospel": "Psalm 74"
+  },
+  {
+    "day": 75,
+    "date": "March 15",
+    "old_testament": "Zephaniah 5",
+    "new_testament": "1 Peter 5",
+    "psalm_or_gospel": "Psalm 75"
+  },
+  {
+    "day": 76,
+    "date": "March 16",
+    "old_testament": "Haggai 6",
+    "new_testament": "2 Peter 1",
+    "psalm_or_gospel": "Psalm 76"
+  },
+  {
+    "day": 77,
+    "date": "March 17",
+    "old_testament": "Zechariah 7",
+    "new_testament": "1 John 2",
+    "psalm_or_gospel": "Psalm 77"
+  },
+  {
+    "day": 78,
+    "date": "March 18",
+    "old_testament": "Malachi 8",
+    "new_testament": "2 John 3",
+    "psalm_or_gospel": "Psalm 78"
+  },
+  {
+    "day": 79,
+    "date": "March 19",
+    "old_testament": "Genesis 9",
+    "new_testament": "3 John 4",
+    "psalm_or_gospel": "Psalm 79"
+  },
+  {
+    "day": 80,
+    "date": "March 20",
+    "old_testament": "Exodus 10",
+    "new_testament": "Jude 5",
+    "psalm_or_gospel": "Psalm 80"
+  },
+  {
+    "day": 81,
+    "date": "March 21",
+    "old_testament": "Leviticus 1",
+    "new_testament": "Revelation 1",
+    "psalm_or_gospel": "Psalm 81"
+  },
+  {
+    "day": 82,
+    "date": "March 22",
+    "old_testament": "Numbers 2",
+    "new_testament": "Matthew 2",
+    "psalm_or_gospel": "Psalm 82"
+  },
+  {
+    "day": 83,
+    "date": "March 23",
+    "old_testament": "Deuteronomy 3",
+    "new_testament": "Mark 3",
+    "psalm_or_gospel": "Psalm 83"
+  },
+  {
+    "day": 84,
+    "date": "March 24",
+    "old_testament": "Joshua 4",
+    "new_testament": "Luke 4",
+    "psalm_or_gospel": "Psalm 84"
+  },
+  {
+    "day": 85,
+    "date": "March 25",
+    "old_testament": "Judges 5",
+    "new_testament": "John 5",
+    "psalm_or_gospel": "Psalm 85"
+  },
+  {
+    "day": 86,
+    "date": "March 26",
+    "old_testament": "Ruth 6",
+    "new_testament": "Acts 1",
+    "psalm_or_gospel": "Psalm 86"
+  },
+  {
+    "day": 87,
+    "date": "March 27",
+    "old_testament": "1 Samuel 7",
+    "new_testament": "Romans 2",
+    "psalm_or_gospel": "Psalm 87"
+  },
+  {
+    "day": 88,
+    "date": "March 28",
+    "old_testament": "2 Samuel 8",
+    "new_testament": "1 Corinthians 3",
+    "psalm_or_gospel": "Psalm 88"
+  },
+  {
+    "day": 89,
+    "date": "March 29",
+    "old_testament": "1 Kings 9",
+    "new_testament": "2 Corinthians 4",
+    "psalm_or_gospel": "Psalm 89"
+  },
+  {
+    "day": 90,
+    "date": "March 30",
+    "old_testament": "2 Kings 10",
+    "new_testament": "Galatians 5",
+    "psalm_or_gospel": "Psalm 90"
+  },
+  {
+    "day": 91,
+    "date": "March 31",
+    "old_testament": "1 Chronicles 1",
+    "new_testament": "Ephesians 1",
+    "psalm_or_gospel": "Psalm 91"
+  },
+  {
+    "day": 92,
+    "date": "April 01",
+    "old_testament": "2 Chronicles 2",
+    "new_testament": "Philippians 2",
+    "psalm_or_gospel": "Psalm 92"
+  },
+  {
+    "day": 93,
+    "date": "April 02",
+    "old_testament": "Ezra 3",
+    "new_testament": "Colossians 3",
+    "psalm_or_gospel": "Psalm 93"
+  },
+  {
+    "day": 94,
+    "date": "April 03",
+    "old_testament": "Nehemiah 4",
+    "new_testament": "1 Thessalonians 4",
+    "psalm_or_gospel": "Psalm 94"
+  },
+  {
+    "day": 95,
+    "date": "April 04",
+    "old_testament": "Esther 5",
+    "new_testament": "2 Thessalonians 5",
+    "psalm_or_gospel": "Psalm 95"
+  },
+  {
+    "day": 96,
+    "date": "April 05",
+    "old_testament": "Job 6",
+    "new_testament": "1 Timothy 1",
+    "psalm_or_gospel": "Psalm 96"
+  },
+  {
+    "day": 97,
+    "date": "April 06",
+    "old_testament": "Psalms 7",
+    "new_testament": "2 Timothy 2",
+    "psalm_or_gospel": "Psalm 97"
+  },
+  {
+    "day": 98,
+    "date": "April 07",
+    "old_testament": "Proverbs 8",
+    "new_testament": "Titus 3",
+    "psalm_or_gospel": "Psalm 98"
+  },
+  {
+    "day": 99,
+    "date": "April 08",
+    "old_testament": "Ecclesiastes 9",
+    "new_testament": "Philemon 4",
+    "psalm_or_gospel": "Psalm 99"
+  },
+  {
+    "day": 100,
+    "date": "April 09",
+    "old_testament": "Song of Songs 10",
+    "new_testament": "Hebrews 5",
+    "psalm_or_gospel": "Psalm 100"
+  },
+  {
+    "day": 101,
+    "date": "April 10",
+    "old_testament": "Isaiah 1",
+    "new_testament": "James 1",
+    "psalm_or_gospel": "Psalm 101"
+  },
+  {
+    "day": 102,
+    "date": "April 11",
+    "old_testament": "Jeremiah 2",
+    "new_testament": "1 Peter 2",
+    "psalm_or_gospel": "Psalm 102"
+  },
+  {
+    "day": 103,
+    "date": "April 12",
+    "old_testament": "Lamentations 3",
+    "new_testament": "2 Peter 3",
+    "psalm_or_gospel": "Psalm 103"
+  },
+  {
+    "day": 104,
+    "date": "April 13",
+    "old_testament": "Ezekiel 4",
+    "new_testament": "1 John 4",
+    "psalm_or_gospel": "Psalm 104"
+  },
+  {
+    "day": 105,
+    "date": "April 14",
+    "old_testament": "Daniel 5",
+    "new_testament": "2 John 5",
+    "psalm_or_gospel": "Psalm 105"
+  },
+  {
+    "day": 106,
+    "date": "April 15",
+    "old_testament": "Hosea 6",
+    "new_testament": "3 John 1",
+    "psalm_or_gospel": "Psalm 106"
+  },
+  {
+    "day": 107,
+    "date": "April 16",
+    "old_testament": "Joel 7",
+    "new_testament": "Jude 2",
+    "psalm_or_gospel": "Psalm 107"
+  },
+  {
+    "day": 108,
+    "date": "April 17",
+    "old_testament": "Amos 8",
+    "new_testament": "Revelation 3",
+    "psalm_or_gospel": "Psalm 108"
+  },
+  {
+    "day": 109,
+    "date": "April 18",
+    "old_testament": "Obadiah 9",
+    "new_testament": "Matthew 4",
+    "psalm_or_gospel": "Psalm 109"
+  },
+  {
+    "day": 110,
+    "date": "April 19",
+    "old_testament": "Jonah 10",
+    "new_testament": "Mark 5",
+    "psalm_or_gospel": "Psalm 110"
+  },
+  {
+    "day": 111,
+    "date": "April 20",
+    "old_testament": "Micah 1",
+    "new_testament": "Luke 1",
+    "psalm_or_gospel": "Psalm 111"
+  },
+  {
+    "day": 112,
+    "date": "April 21",
+    "old_testament": "Nahum 2",
+    "new_testament": "John 2",
+    "psalm_or_gospel": "Psalm 112"
+  },
+  {
+    "day": 113,
+    "date": "April 22",
+    "old_testament": "Habakkuk 3",
+    "new_testament": "Acts 3",
+    "psalm_or_gospel": "Psalm 113"
+  },
+  {
+    "day": 114,
+    "date": "April 23",
+    "old_testament": "Zephaniah 4",
+    "new_testament": "Romans 4",
+    "psalm_or_gospel": "Psalm 114"
+  },
+  {
+    "day": 115,
+    "date": "April 24",
+    "old_testament": "Haggai 5",
+    "new_testament": "1 Corinthians 5",
+    "psalm_or_gospel": "Psalm 115"
+  },
+  {
+    "day": 116,
+    "date": "April 25",
+    "old_testament": "Zechariah 6",
+    "new_testament": "2 Corinthians 1",
+    "psalm_or_gospel": "Psalm 116"
+  },
+  {
+    "day": 117,
+    "date": "April 26",
+    "old_testament": "Malachi 7",
+    "new_testament": "Galatians 2",
+    "psalm_or_gospel": "Psalm 117"
+  },
+  {
+    "day": 118,
+    "date": "April 27",
+    "old_testament": "Genesis 8",
+    "new_testament": "Ephesians 3",
+    "psalm_or_gospel": "Psalm 118"
+  },
+  {
+    "day": 119,
+    "date": "April 28",
+    "old_testament": "Exodus 9",
+    "new_testament": "Philippians 4",
+    "psalm_or_gospel": "Psalm 119"
+  },
+  {
+    "day": 120,
+    "date": "April 29",
+    "old_testament": "Leviticus 10",
+    "new_testament": "Colossians 5",
+    "psalm_or_gospel": "Psalm 120"
+  },
+  {
+    "day": 121,
+    "date": "April 30",
+    "old_testament": "Numbers 1",
+    "new_testament": "1 Thessalonians 1",
+    "psalm_or_gospel": "Psalm 121"
+  },
+  {
+    "day": 122,
+    "date": "May 01",
+    "old_testament": "Deuteronomy 2",
+    "new_testament": "2 Thessalonians 2",
+    "psalm_or_gospel": "Psalm 122"
+  },
+  {
+    "day": 123,
+    "date": "May 02",
+    "old_testament": "Joshua 3",
+    "new_testament": "1 Timothy 3",
+    "psalm_or_gospel": "Psalm 123"
+  },
+  {
+    "day": 124,
+    "date": "May 03",
+    "old_testament": "Judges 4",
+    "new_testament": "2 Timothy 4",
+    "psalm_or_gospel": "Psalm 124"
+  },
+  {
+    "day": 125,
+    "date": "May 04",
+    "old_testament": "Ruth 5",
+    "new_testament": "Titus 5",
+    "psalm_or_gospel": "Psalm 125"
+  },
+  {
+    "day": 126,
+    "date": "May 05",
+    "old_testament": "1 Samuel 6",
+    "new_testament": "Philemon 1",
+    "psalm_or_gospel": "Psalm 126"
+  },
+  {
+    "day": 127,
+    "date": "May 06",
+    "old_testament": "2 Samuel 7",
+    "new_testament": "Hebrews 2",
+    "psalm_or_gospel": "Psalm 127"
+  },
+  {
+    "day": 128,
+    "date": "May 07",
+    "old_testament": "1 Kings 8",
+    "new_testament": "James 3",
+    "psalm_or_gospel": "Psalm 128"
+  },
+  {
+    "day": 129,
+    "date": "May 08",
+    "old_testament": "2 Kings 9",
+    "new_testament": "1 Peter 4",
+    "psalm_or_gospel": "Psalm 129"
+  },
+  {
+    "day": 130,
+    "date": "May 09",
+    "old_testament": "1 Chronicles 10",
+    "new_testament": "2 Peter 5",
+    "psalm_or_gospel": "Psalm 130"
+  },
+  {
+    "day": 131,
+    "date": "May 10",
+    "old_testament": "2 Chronicles 1",
+    "new_testament": "1 John 1",
+    "psalm_or_gospel": "Psalm 131"
+  },
+  {
+    "day": 132,
+    "date": "May 11",
+    "old_testament": "Ezra 2",
+    "new_testament": "2 John 2",
+    "psalm_or_gospel": "Psalm 132"
+  },
+  {
+    "day": 133,
+    "date": "May 12",
+    "old_testament": "Nehemiah 3",
+    "new_testament": "3 John 3",
+    "psalm_or_gospel": "Psalm 133"
+  },
+  {
+    "day": 134,
+    "date": "May 13",
+    "old_testament": "Esther 4",
+    "new_testament": "Jude 4",
+    "psalm_or_gospel": "Psalm 134"
+  },
+  {
+    "day": 135,
+    "date": "May 14",
+    "old_testament": "Job 5",
+    "new_testament": "Revelation 5",
+    "psalm_or_gospel": "Psalm 135"
+  },
+  {
+    "day": 136,
+    "date": "May 15",
+    "old_testament": "Psalms 6",
+    "new_testament": "Matthew 1",
+    "psalm_or_gospel": "Psalm 136"
+  },
+  {
+    "day": 137,
+    "date": "May 16",
+    "old_testament": "Proverbs 7",
+    "new_testament": "Mark 2",
+    "psalm_or_gospel": "Psalm 137"
+  },
+  {
+    "day": 138,
+    "date": "May 17",
+    "old_testament": "Ecclesiastes 8",
+    "new_testament": "Luke 3",
+    "psalm_or_gospel": "Psalm 138"
+  },
+  {
+    "day": 139,
+    "date": "May 18",
+    "old_testament": "Song of Songs 9",
+    "new_testament": "John 4",
+    "psalm_or_gospel": "Psalm 139"
+  },
+  {
+    "day": 140,
+    "date": "May 19",
+    "old_testament": "Isaiah 10",
+    "new_testament": "Acts 5",
+    "psalm_or_gospel": "Psalm 140"
+  },
+  {
+    "day": 141,
+    "date": "May 20",
+    "old_testament": "Jeremiah 1",
+    "new_testament": "Romans 1",
+    "psalm_or_gospel": "Psalm 141"
+  },
+  {
+    "day": 142,
+    "date": "May 21",
+    "old_testament": "Lamentations 2",
+    "new_testament": "1 Corinthians 2",
+    "psalm_or_gospel": "Psalm 142"
+  },
+  {
+    "day": 143,
+    "date": "May 22",
+    "old_testament": "Ezekiel 3",
+    "new_testament": "2 Corinthians 3",
+    "psalm_or_gospel": "Psalm 143"
+  },
+  {
+    "day": 144,
+    "date": "May 23",
+    "old_testament": "Daniel 4",
+    "new_testament": "Galatians 4",
+    "psalm_or_gospel": "Psalm 144"
+  },
+  {
+    "day": 145,
+    "date": "May 24",
+    "old_testament": "Hosea 5",
+    "new_testament": "Ephesians 5",
+    "psalm_or_gospel": "Psalm 145"
+  },
+  {
+    "day": 146,
+    "date": "May 25",
+    "old_testament": "Joel 6",
+    "new_testament": "Philippians 1",
+    "psalm_or_gospel": "Psalm 146"
+  },
+  {
+    "day": 147,
+    "date": "May 26",
+    "old_testament": "Amos 7",
+    "new_testament": "Colossians 2",
+    "psalm_or_gospel": "Psalm 147"
+  },
+  {
+    "day": 148,
+    "date": "May 27",
+    "old_testament": "Obadiah 8",
+    "new_testament": "1 Thessalonians 3",
+    "psalm_or_gospel": "Psalm 148"
+  },
+  {
+    "day": 149,
+    "date": "May 28",
+    "old_testament": "Jonah 9",
+    "new_testament": "2 Thessalonians 4",
+    "psalm_or_gospel": "Psalm 149"
+  },
+  {
+    "day": 150,
+    "date": "May 29",
+    "old_testament": "Micah 10",
+    "new_testament": "1 Timothy 5",
+    "psalm_or_gospel": "Psalm 150"
+  },
+  {
+    "day": 151,
+    "date": "May 30",
+    "old_testament": "Nahum 1",
+    "new_testament": "2 Timothy 1",
+    "psalm_or_gospel": "Psalm 1"
+  },
+  {
+    "day": 152,
+    "date": "May 31",
+    "old_testament": "Habakkuk 2",
+    "new_testament": "Titus 2",
+    "psalm_or_gospel": "Psalm 2"
+  },
+  {
+    "day": 153,
+    "date": "June 01",
+    "old_testament": "Zephaniah 3",
+    "new_testament": "Philemon 3",
+    "psalm_or_gospel": "Psalm 3"
+  },
+  {
+    "day": 154,
+    "date": "June 02",
+    "old_testament": "Haggai 4",
+    "new_testament": "Hebrews 4",
+    "psalm_or_gospel": "Psalm 4"
+  },
+  {
+    "day": 155,
+    "date": "June 03",
+    "old_testament": "Zechariah 5",
+    "new_testament": "James 5",
+    "psalm_or_gospel": "Psalm 5"
+  },
+  {
+    "day": 156,
+    "date": "June 04",
+    "old_testament": "Malachi 6",
+    "new_testament": "1 Peter 1",
+    "psalm_or_gospel": "Psalm 6"
+  },
+  {
+    "day": 157,
+    "date": "June 05",
+    "old_testament": "Genesis 7",
+    "new_testament": "2 Peter 2",
+    "psalm_or_gospel": "Psalm 7"
+  },
+  {
+    "day": 158,
+    "date": "June 06",
+    "old_testament": "Exodus 8",
+    "new_testament": "1 John 3",
+    "psalm_or_gospel": "Psalm 8"
+  },
+  {
+    "day": 159,
+    "date": "June 07",
+    "old_testament": "Leviticus 9",
+    "new_testament": "2 John 4",
+    "psalm_or_gospel": "Psalm 9"
+  },
+  {
+    "day": 160,
+    "date": "June 08",
+    "old_testament": "Numbers 10",
+    "new_testament": "3 John 5",
+    "psalm_or_gospel": "Psalm 10"
+  },
+  {
+    "day": 161,
+    "date": "June 09",
+    "old_testament": "Deuteronomy 1",
+    "new_testament": "Jude 1",
+    "psalm_or_gospel": "Psalm 11"
+  },
+  {
+    "day": 162,
+    "date": "June 10",
+    "old_testament": "Joshua 2",
+    "new_testament": "Revelation 2",
+    "psalm_or_gospel": "Psalm 12"
+  },
+  {
+    "day": 163,
+    "date": "June 11",
+    "old_testament": "Judges 3",
+    "new_testament": "Matthew 3",
+    "psalm_or_gospel": "Psalm 13"
+  },
+  {
+    "day": 164,
+    "date": "June 12",
+    "old_testament": "Ruth 4",
+    "new_testament": "Mark 4",
+    "psalm_or_gospel": "Psalm 14"
+  },
+  {
+    "day": 165,
+    "date": "June 13",
+    "old_testament": "1 Samuel 5",
+    "new_testament": "Luke 5",
+    "psalm_or_gospel": "Psalm 15"
+  },
+  {
+    "day": 166,
+    "date": "June 14",
+    "old_testament": "2 Samuel 6",
+    "new_testament": "John 1",
+    "psalm_or_gospel": "Psalm 16"
+  },
+  {
+    "day": 167,
+    "date": "June 15",
+    "old_testament": "1 Kings 7",
+    "new_testament": "Acts 2",
+    "psalm_or_gospel": "Psalm 17"
+  },
+  {
+    "day": 168,
+    "date": "June 16",
+    "old_testament": "2 Kings 8",
+    "new_testament": "Romans 3",
+    "psalm_or_gospel": "Psalm 18"
+  },
+  {
+    "day": 169,
+    "date": "June 17",
+    "old_testament": "1 Chronicles 9",
+    "new_testament": "1 Corinthians 4",
+    "psalm_or_gospel": "Psalm 19"
+  },
+  {
+    "day": 170,
+    "date": "June 18",
+    "old_testament": "2 Chronicles 10",
+    "new_testament": "2 Corinthians 5",
+    "psalm_or_gospel": "Psalm 20"
+  },
+  {
+    "day": 171,
+    "date": "June 19",
+    "old_testament": "Ezra 1",
+    "new_testament": "Galatians 1",
+    "psalm_or_gospel": "Psalm 21"
+  },
+  {
+    "day": 172,
+    "date": "June 20",
+    "old_testament": "Nehemiah 2",
+    "new_testament": "Ephesians 2",
+    "psalm_or_gospel": "Psalm 22"
+  },
+  {
+    "day": 173,
+    "date": "June 21",
+    "old_testament": "Esther 3",
+    "new_testament": "Philippians 3",
+    "psalm_or_gospel": "Psalm 23"
+  },
+  {
+    "day": 174,
+    "date": "June 22",
+    "old_testament": "Job 4",
+    "new_testament": "Colossians 4",
+    "psalm_or_gospel": "Psalm 24"
+  },
+  {
+    "day": 175,
+    "date": "June 23",
+    "old_testament": "Psalms 5",
+    "new_testament": "1 Thessalonians 5",
+    "psalm_or_gospel": "Psalm 25"
+  },
+  {
+    "day": 176,
+    "date": "June 24",
+    "old_testament": "Proverbs 6",
+    "new_testament": "2 Thessalonians 1",
+    "psalm_or_gospel": "Psalm 26"
+  },
+  {
+    "day": 177,
+    "date": "June 25",
+    "old_testament": "Ecclesiastes 7",
+    "new_testament": "1 Timothy 2",
+    "psalm_or_gospel": "Psalm 27"
+  },
+  {
+    "day": 178,
+    "date": "June 26",
+    "old_testament": "Song of Songs 8",
+    "new_testament": "2 Timothy 3",
+    "psalm_or_gospel": "Psalm 28"
+  },
+  {
+    "day": 179,
+    "date": "June 27",
+    "old_testament": "Isaiah 9",
+    "new_testament": "Titus 4",
+    "psalm_or_gospel": "Psalm 29"
+  },
+  {
+    "day": 180,
+    "date": "June 28",
+    "old_testament": "Jeremiah 10",
+    "new_testament": "Philemon 5",
+    "psalm_or_gospel": "Psalm 30"
+  },
+  {
+    "day": 181,
+    "date": "June 29",
+    "old_testament": "Lamentations 1",
+    "new_testament": "Hebrews 1",
+    "psalm_or_gospel": "Psalm 31"
+  },
+  {
+    "day": 182,
+    "date": "June 30",
+    "old_testament": "Ezekiel 2",
+    "new_testament": "James 2",
+    "psalm_or_gospel": "Psalm 32"
+  },
+  {
+    "day": 183,
+    "date": "July 01",
+    "old_testament": "Daniel 3",
+    "new_testament": "1 Peter 3",
+    "psalm_or_gospel": "Psalm 33"
+  },
+  {
+    "day": 184,
+    "date": "July 02",
+    "old_testament": "Hosea 4",
+    "new_testament": "2 Peter 4",
+    "psalm_or_gospel": "Psalm 34"
+  },
+  {
+    "day": 185,
+    "date": "July 03",
+    "old_testament": "Joel 5",
+    "new_testament": "1 John 5",
+    "psalm_or_gospel": "Psalm 35"
+  },
+  {
+    "day": 186,
+    "date": "July 04",
+    "old_testament": "Amos 6",
+    "new_testament": "2 John 1",
+    "psalm_or_gospel": "Psalm 36"
+  },
+  {
+    "day": 187,
+    "date": "July 05",
+    "old_testament": "Obadiah 7",
+    "new_testament": "3 John 2",
+    "psalm_or_gospel": "Psalm 37"
+  },
+  {
+    "day": 188,
+    "date": "July 06",
+    "old_testament": "Jonah 8",
+    "new_testament": "Jude 3",
+    "psalm_or_gospel": "Psalm 38"
+  },
+  {
+    "day": 189,
+    "date": "July 07",
+    "old_testament": "Micah 9",
+    "new_testament": "Revelation 4",
+    "psalm_or_gospel": "Psalm 39"
+  },
+  {
+    "day": 190,
+    "date": "July 08",
+    "old_testament": "Nahum 10",
+    "new_testament": "Matthew 5",
+    "psalm_or_gospel": "Psalm 40"
+  },
+  {
+    "day": 191,
+    "date": "July 09",
+    "old_testament": "Habakkuk 1",
+    "new_testament": "Mark 1",
+    "psalm_or_gospel": "Psalm 41"
+  },
+  {
+    "day": 192,
+    "date": "July 10",
+    "old_testament": "Zephaniah 2",
+    "new_testament": "Luke 2",
+    "psalm_or_gospel": "Psalm 42"
+  },
+  {
+    "day": 193,
+    "date": "July 11",
+    "old_testament": "Haggai 3",
+    "new_testament": "John 3",
+    "psalm_or_gospel": "Psalm 43"
+  },
+  {
+    "day": 194,
+    "date": "July 12",
+    "old_testament": "Zechariah 4",
+    "new_testament": "Acts 4",
+    "psalm_or_gospel": "Psalm 44"
+  },
+  {
+    "day": 195,
+    "date": "July 13",
+    "old_testament": "Malachi 5",
+    "new_testament": "Romans 5",
+    "psalm_or_gospel": "Psalm 45"
+  },
+  {
+    "day": 196,
+    "date": "July 14",
+    "old_testament": "Genesis 6",
+    "new_testament": "1 Corinthians 1",
+    "psalm_or_gospel": "Psalm 46"
+  },
+  {
+    "day": 197,
+    "date": "July 15",
+    "old_testament": "Exodus 7",
+    "new_testament": "2 Corinthians 2",
+    "psalm_or_gospel": "Psalm 47"
+  },
+  {
+    "day": 198,
+    "date": "July 16",
+    "old_testament": "Leviticus 8",
+    "new_testament": "Galatians 3",
+    "psalm_or_gospel": "Psalm 48"
+  },
+  {
+    "day": 199,
+    "date": "July 17",
+    "old_testament": "Numbers 9",
+    "new_testament": "Ephesians 4",
+    "psalm_or_gospel": "Psalm 49"
+  },
+  {
+    "day": 200,
+    "date": "July 18",
+    "old_testament": "Deuteronomy 10",
+    "new_testament": "Philippians 5",
+    "psalm_or_gospel": "Psalm 50"
+  },
+  {
+    "day": 201,
+    "date": "July 19",
+    "old_testament": "Joshua 1",
+    "new_testament": "Colossians 1",
+    "psalm_or_gospel": "Psalm 51"
+  },
+  {
+    "day": 202,
+    "date": "July 20",
+    "old_testament": "Judges 2",
+    "new_testament": "1 Thessalonians 2",
+    "psalm_or_gospel": "Psalm 52"
+  },
+  {
+    "day": 203,
+    "date": "July 21",
+    "old_testament": "Ruth 3",
+    "new_testament": "2 Thessalonians 3",
+    "psalm_or_gospel": "Psalm 53"
+  },
+  {
+    "day": 204,
+    "date": "July 22",
+    "old_testament": "1 Samuel 4",
+    "new_testament": "1 Timothy 4",
+    "psalm_or_gospel": "Psalm 54"
+  },
+  {
+    "day": 205,
+    "date": "July 23",
+    "old_testament": "2 Samuel 5",
+    "new_testament": "2 Timothy 5",
+    "psalm_or_gospel": "Psalm 55"
+  },
+  {
+    "day": 206,
+    "date": "July 24",
+    "old_testament": "1 Kings 6",
+    "new_testament": "Titus 1",
+    "psalm_or_gospel": "Psalm 56"
+  },
+  {
+    "day": 207,
+    "date": "July 25",
+    "old_testament": "2 Kings 7",
+    "new_testament": "Philemon 2",
+    "psalm_or_gospel": "Psalm 57"
+  },
+  {
+    "day": 208,
+    "date": "July 26",
+    "old_testament": "1 Chronicles 8",
+    "new_testament": "Hebrews 3",
+    "psalm_or_gospel": "Psalm 58"
+  },
+  {
+    "day": 209,
+    "date": "July 27",
+    "old_testament": "2 Chronicles 9",
+    "new_testament": "James 4",
+    "psalm_or_gospel": "Psalm 59"
+  },
+  {
+    "day": 210,
+    "date": "July 28",
+    "old_testament": "Ezra 10",
+    "new_testament": "1 Peter 5",
+    "psalm_or_gospel": "Psalm 60"
+  },
+  {
+    "day": 211,
+    "date": "July 29",
+    "old_testament": "Nehemiah 1",
+    "new_testament": "2 Peter 1",
+    "psalm_or_gospel": "Psalm 61"
+  },
+  {
+    "day": 212,
+    "date": "July 30",
+    "old_testament": "Esther 2",
+    "new_testament": "1 John 2",
+    "psalm_or_gospel": "Psalm 62"
+  },
+  {
+    "day": 213,
+    "date": "July 31",
+    "old_testament": "Job 3",
+    "new_testament": "2 John 3",
+    "psalm_or_gospel": "Psalm 63"
+  },
+  {
+    "day": 214,
+    "date": "August 01",
+    "old_testament": "Psalms 4",
+    "new_testament": "3 John 4",
+    "psalm_or_gospel": "Psalm 64"
+  },
+  {
+    "day": 215,
+    "date": "August 02",
+    "old_testament": "Proverbs 5",
+    "new_testament": "Jude 5",
+    "psalm_or_gospel": "Psalm 65"
+  },
+  {
+    "day": 216,
+    "date": "August 03",
+    "old_testament": "Ecclesiastes 6",
+    "new_testament": "Revelation 1",
+    "psalm_or_gospel": "Psalm 66"
+  },
+  {
+    "day": 217,
+    "date": "August 04",
+    "old_testament": "Song of Songs 7",
+    "new_testament": "Matthew 2",
+    "psalm_or_gospel": "Psalm 67"
+  },
+  {
+    "day": 218,
+    "date": "August 05",
+    "old_testament": "Isaiah 8",
+    "new_testament": "Mark 3",
+    "psalm_or_gospel": "Psalm 68"
+  },
+  {
+    "day": 219,
+    "date": "August 06",
+    "old_testament": "Jeremiah 9",
+    "new_testament": "Luke 4",
+    "psalm_or_gospel": "Psalm 69"
+  },
+  {
+    "day": 220,
+    "date": "August 07",
+    "old_testament": "Lamentations 10",
+    "new_testament": "John 5",
+    "psalm_or_gospel": "Psalm 70"
+  },
+  {
+    "day": 221,
+    "date": "August 08",
+    "old_testament": "Ezekiel 1",
+    "new_testament": "Acts 1",
+    "psalm_or_gospel": "Psalm 71"
+  },
+  {
+    "day": 222,
+    "date": "August 09",
+    "old_testament": "Daniel 2",
+    "new_testament": "Romans 2",
+    "psalm_or_gospel": "Psalm 72"
+  },
+  {
+    "day": 223,
+    "date": "August 10",
+    "old_testament": "Hosea 3",
+    "new_testament": "1 Corinthians 3",
+    "psalm_or_gospel": "Psalm 73"
+  },
+  {
+    "day": 224,
+    "date": "August 11",
+    "old_testament": "Joel 4",
+    "new_testament": "2 Corinthians 4",
+    "psalm_or_gospel": "Psalm 74"
+  },
+  {
+    "day": 225,
+    "date": "August 12",
+    "old_testament": "Amos 5",
+    "new_testament": "Galatians 5",
+    "psalm_or_gospel": "Psalm 75"
+  },
+  {
+    "day": 226,
+    "date": "August 13",
+    "old_testament": "Obadiah 6",
+    "new_testament": "Ephesians 1",
+    "psalm_or_gospel": "Psalm 76"
+  },
+  {
+    "day": 227,
+    "date": "August 14",
+    "old_testament": "Jonah 7",
+    "new_testament": "Philippians 2",
+    "psalm_or_gospel": "Psalm 77"
+  },
+  {
+    "day": 228,
+    "date": "August 15",
+    "old_testament": "Micah 8",
+    "new_testament": "Colossians 3",
+    "psalm_or_gospel": "Psalm 78"
+  },
+  {
+    "day": 229,
+    "date": "August 16",
+    "old_testament": "Nahum 9",
+    "new_testament": "1 Thessalonians 4",
+    "psalm_or_gospel": "Psalm 79"
+  },
+  {
+    "day": 230,
+    "date": "August 17",
+    "old_testament": "Habakkuk 10",
+    "new_testament": "2 Thessalonians 5",
+    "psalm_or_gospel": "Psalm 80"
+  },
+  {
+    "day": 231,
+    "date": "August 18",
+    "old_testament": "Zephaniah 1",
+    "new_testament": "1 Timothy 1",
+    "psalm_or_gospel": "Psalm 81"
+  },
+  {
+    "day": 232,
+    "date": "August 19",
+    "old_testament": "Haggai 2",
+    "new_testament": "2 Timothy 2",
+    "psalm_or_gospel": "Psalm 82"
+  },
+  {
+    "day": 233,
+    "date": "August 20",
+    "old_testament": "Zechariah 3",
+    "new_testament": "Titus 3",
+    "psalm_or_gospel": "Psalm 83"
+  },
+  {
+    "day": 234,
+    "date": "August 21",
+    "old_testament": "Malachi 4",
+    "new_testament": "Philemon 4",
+    "psalm_or_gospel": "Psalm 84"
+  },
+  {
+    "day": 235,
+    "date": "August 22",
+    "old_testament": "Genesis 5",
+    "new_testament": "Hebrews 5",
+    "psalm_or_gospel": "Psalm 85"
+  },
+  {
+    "day": 236,
+    "date": "August 23",
+    "old_testament": "Exodus 6",
+    "new_testament": "James 1",
+    "psalm_or_gospel": "Psalm 86"
+  },
+  {
+    "day": 237,
+    "date": "August 24",
+    "old_testament": "Leviticus 7",
+    "new_testament": "1 Peter 2",
+    "psalm_or_gospel": "Psalm 87"
+  },
+  {
+    "day": 238,
+    "date": "August 25",
+    "old_testament": "Numbers 8",
+    "new_testament": "2 Peter 3",
+    "psalm_or_gospel": "Psalm 88"
+  },
+  {
+    "day": 239,
+    "date": "August 26",
+    "old_testament": "Deuteronomy 9",
+    "new_testament": "1 John 4",
+    "psalm_or_gospel": "Psalm 89"
+  },
+  {
+    "day": 240,
+    "date": "August 27",
+    "old_testament": "Joshua 10",
+    "new_testament": "2 John 5",
+    "psalm_or_gospel": "Psalm 90"
+  },
+  {
+    "day": 241,
+    "date": "August 28",
+    "old_testament": "Judges 1",
+    "new_testament": "3 John 1",
+    "psalm_or_gospel": "Psalm 91"
+  },
+  {
+    "day": 242,
+    "date": "August 29",
+    "old_testament": "Ruth 2",
+    "new_testament": "Jude 2",
+    "psalm_or_gospel": "Psalm 92"
+  },
+  {
+    "day": 243,
+    "date": "August 30",
+    "old_testament": "1 Samuel 3",
+    "new_testament": "Revelation 3",
+    "psalm_or_gospel": "Psalm 93"
+  },
+  {
+    "day": 244,
+    "date": "August 31",
+    "old_testament": "2 Samuel 4",
+    "new_testament": "Matthew 4",
+    "psalm_or_gospel": "Psalm 94"
+  },
+  {
+    "day": 245,
+    "date": "September 01",
+    "old_testament": "1 Kings 5",
+    "new_testament": "Mark 5",
+    "psalm_or_gospel": "Psalm 95"
+  },
+  {
+    "day": 246,
+    "date": "September 02",
+    "old_testament": "2 Kings 6",
+    "new_testament": "Luke 1",
+    "psalm_or_gospel": "Psalm 96"
+  },
+  {
+    "day": 247,
+    "date": "September 03",
+    "old_testament": "1 Chronicles 7",
+    "new_testament": "John 2",
+    "psalm_or_gospel": "Psalm 97"
+  },
+  {
+    "day": 248,
+    "date": "September 04",
+    "old_testament": "2 Chronicles 8",
+    "new_testament": "Acts 3",
+    "psalm_or_gospel": "Psalm 98"
+  },
+  {
+    "day": 249,
+    "date": "September 05",
+    "old_testament": "Ezra 9",
+    "new_testament": "Romans 4",
+    "psalm_or_gospel": "Psalm 99"
+  },
+  {
+    "day": 250,
+    "date": "September 06",
+    "old_testament": "Nehemiah 10",
+    "new_testament": "1 Corinthians 5",
+    "psalm_or_gospel": "Psalm 100"
+  },
+  {
+    "day": 251,
+    "date": "September 07",
+    "old_testament": "Esther 1",
+    "new_testament": "2 Corinthians 1",
+    "psalm_or_gospel": "Psalm 101"
+  },
+  {
+    "day": 252,
+    "date": "September 08",
+    "old_testament": "Job 2",
+    "new_testament": "Galatians 2",
+    "psalm_or_gospel": "Psalm 102"
+  },
+  {
+    "day": 253,
+    "date": "September 09",
+    "old_testament": "Psalms 3",
+    "new_testament": "Ephesians 3",
+    "psalm_or_gospel": "Psalm 103"
+  },
+  {
+    "day": 254,
+    "date": "September 10",
+    "old_testament": "Proverbs 4",
+    "new_testament": "Philippians 4",
+    "psalm_or_gospel": "Psalm 104"
+  },
+  {
+    "day": 255,
+    "date": "September 11",
+    "old_testament": "Ecclesiastes 5",
+    "new_testament": "Colossians 5",
+    "psalm_or_gospel": "Psalm 105"
+  },
+  {
+    "day": 256,
+    "date": "September 12",
+    "old_testament": "Song of Songs 6",
+    "new_testament": "1 Thessalonians 1",
+    "psalm_or_gospel": "Psalm 106"
+  },
+  {
+    "day": 257,
+    "date": "September 13",
+    "old_testament": "Isaiah 7",
+    "new_testament": "2 Thessalonians 2",
+    "psalm_or_gospel": "Psalm 107"
+  },
+  {
+    "day": 258,
+    "date": "September 14",
+    "old_testament": "Jeremiah 8",
+    "new_testament": "1 Timothy 3",
+    "psalm_or_gospel": "Psalm 108"
+  },
+  {
+    "day": 259,
+    "date": "September 15",
+    "old_testament": "Lamentations 9",
+    "new_testament": "2 Timothy 4",
+    "psalm_or_gospel": "Psalm 109"
+  },
+  {
+    "day": 260,
+    "date": "September 16",
+    "old_testament": "Ezekiel 10",
+    "new_testament": "Titus 5",
+    "psalm_or_gospel": "Psalm 110"
+  },
+  {
+    "day": 261,
+    "date": "September 17",
+    "old_testament": "Daniel 1",
+    "new_testament": "Philemon 1",
+    "psalm_or_gospel": "Psalm 111"
+  },
+  {
+    "day": 262,
+    "date": "September 18",
+    "old_testament": "Hosea 2",
+    "new_testament": "Hebrews 2",
+    "psalm_or_gospel": "Psalm 112"
+  },
+  {
+    "day": 263,
+    "date": "September 19",
+    "old_testament": "Joel 3",
+    "new_testament": "James 3",
+    "psalm_or_gospel": "Psalm 113"
+  },
+  {
+    "day": 264,
+    "date": "September 20",
+    "old_testament": "Amos 4",
+    "new_testament": "1 Peter 4",
+    "psalm_or_gospel": "Psalm 114"
+  },
+  {
+    "day": 265,
+    "date": "September 21",
+    "old_testament": "Obadiah 5",
+    "new_testament": "2 Peter 5",
+    "psalm_or_gospel": "Psalm 115"
+  },
+  {
+    "day": 266,
+    "date": "September 22",
+    "old_testament": "Jonah 6",
+    "new_testament": "1 John 1",
+    "psalm_or_gospel": "Psalm 116"
+  },
+  {
+    "day": 267,
+    "date": "September 23",
+    "old_testament": "Micah 7",
+    "new_testament": "2 John 2",
+    "psalm_or_gospel": "Psalm 117"
+  },
+  {
+    "day": 268,
+    "date": "September 24",
+    "old_testament": "Nahum 8",
+    "new_testament": "3 John 3",
+    "psalm_or_gospel": "Psalm 118"
+  },
+  {
+    "day": 269,
+    "date": "September 25",
+    "old_testament": "Habakkuk 9",
+    "new_testament": "Jude 4",
+    "psalm_or_gospel": "Psalm 119"
+  },
+  {
+    "day": 270,
+    "date": "September 26",
+    "old_testament": "Zephaniah 10",
+    "new_testament": "Revelation 5",
+    "psalm_or_gospel": "Psalm 120"
+  },
+  {
+    "day": 271,
+    "date": "September 27",
+    "old_testament": "Haggai 1",
+    "new_testament": "Matthew 1",
+    "psalm_or_gospel": "Psalm 121"
+  },
+  {
+    "day": 272,
+    "date": "September 28",
+    "old_testament": "Zechariah 2",
+    "new_testament": "Mark 2",
+    "psalm_or_gospel": "Psalm 122"
+  },
+  {
+    "day": 273,
+    "date": "September 29",
+    "old_testament": "Malachi 3",
+    "new_testament": "Luke 3",
+    "psalm_or_gospel": "Psalm 123"
+  },
+  {
+    "day": 274,
+    "date": "September 30",
+    "old_testament": "Genesis 4",
+    "new_testament": "John 4",
+    "psalm_or_gospel": "Psalm 124"
+  },
+  {
+    "day": 275,
+    "date": "October 01",
+    "old_testament": "Exodus 5",
+    "new_testament": "Acts 5",
+    "psalm_or_gospel": "Psalm 125"
+  },
+  {
+    "day": 276,
+    "date": "October 02",
+    "old_testament": "Leviticus 6",
+    "new_testament": "Romans 1",
+    "psalm_or_gospel": "Psalm 126"
+  },
+  {
+    "day": 277,
+    "date": "October 03",
+    "old_testament": "Numbers 7",
+    "new_testament": "1 Corinthians 2",
+    "psalm_or_gospel": "Psalm 127"
+  },
+  {
+    "day": 278,
+    "date": "October 04",
+    "old_testament": "Deuteronomy 8",
+    "new_testament": "2 Corinthians 3",
+    "psalm_or_gospel": "Psalm 128"
+  },
+  {
+    "day": 279,
+    "date": "October 05",
+    "old_testament": "Joshua 9",
+    "new_testament": "Galatians 4",
+    "psalm_or_gospel": "Psalm 129"
+  },
+  {
+    "day": 280,
+    "date": "October 06",
+    "old_testament": "Judges 10",
+    "new_testament": "Ephesians 5",
+    "psalm_or_gospel": "Psalm 130"
+  },
+  {
+    "day": 281,
+    "date": "October 07",
+    "old_testament": "Ruth 1",
+    "new_testament": "Philippians 1",
+    "psalm_or_gospel": "Psalm 131"
+  },
+  {
+    "day": 282,
+    "date": "October 08",
+    "old_testament": "1 Samuel 2",
+    "new_testament": "Colossians 2",
+    "psalm_or_gospel": "Psalm 132"
+  },
+  {
+    "day": 283,
+    "date": "October 09",
+    "old_testament": "2 Samuel 3",
+    "new_testament": "1 Thessalonians 3",
+    "psalm_or_gospel": "Psalm 133"
+  },
+  {
+    "day": 284,
+    "date": "October 10",
+    "old_testament": "1 Kings 4",
+    "new_testament": "2 Thessalonians 4",
+    "psalm_or_gospel": "Psalm 134"
+  },
+  {
+    "day": 285,
+    "date": "October 11",
+    "old_testament": "2 Kings 5",
+    "new_testament": "1 Timothy 5",
+    "psalm_or_gospel": "Psalm 135"
+  },
+  {
+    "day": 286,
+    "date": "October 12",
+    "old_testament": "1 Chronicles 6",
+    "new_testament": "2 Timothy 1",
+    "psalm_or_gospel": "Psalm 136"
+  },
+  {
+    "day": 287,
+    "date": "October 13",
+    "old_testament": "2 Chronicles 7",
+    "new_testament": "Titus 2",
+    "psalm_or_gospel": "Psalm 137"
+  },
+  {
+    "day": 288,
+    "date": "October 14",
+    "old_testament": "Ezra 8",
+    "new_testament": "Philemon 3",
+    "psalm_or_gospel": "Psalm 138"
+  },
+  {
+    "day": 289,
+    "date": "October 15",
+    "old_testament": "Nehemiah 9",
+    "new_testament": "Hebrews 4",
+    "psalm_or_gospel": "Psalm 139"
+  },
+  {
+    "day": 290,
+    "date": "October 16",
+    "old_testament": "Esther 10",
+    "new_testament": "James 5",
+    "psalm_or_gospel": "Psalm 140"
+  },
+  {
+    "day": 291,
+    "date": "October 17",
+    "old_testament": "Job 1",
+    "new_testament": "1 Peter 1",
+    "psalm_or_gospel": "Psalm 141"
+  },
+  {
+    "day": 292,
+    "date": "October 18",
+    "old_testament": "Psalms 2",
+    "new_testament": "2 Peter 2",
+    "psalm_or_gospel": "Psalm 142"
+  },
+  {
+    "day": 293,
+    "date": "October 19",
+    "old_testament": "Proverbs 3",
+    "new_testament": "1 John 3",
+    "psalm_or_gospel": "Psalm 143"
+  },
+  {
+    "day": 294,
+    "date": "October 20",
+    "old_testament": "Ecclesiastes 4",
+    "new_testament": "2 John 4",
+    "psalm_or_gospel": "Psalm 144"
+  },
+  {
+    "day": 295,
+    "date": "October 21",
+    "old_testament": "Song of Songs 5",
+    "new_testament": "3 John 5",
+    "psalm_or_gospel": "Psalm 145"
+  },
+  {
+    "day": 296,
+    "date": "October 22",
+    "old_testament": "Isaiah 6",
+    "new_testament": "Jude 1",
+    "psalm_or_gospel": "Psalm 146"
+  },
+  {
+    "day": 297,
+    "date": "October 23",
+    "old_testament": "Jeremiah 7",
+    "new_testament": "Revelation 2",
+    "psalm_or_gospel": "Psalm 147"
+  },
+  {
+    "day": 298,
+    "date": "October 24",
+    "old_testament": "Lamentations 8",
+    "new_testament": "Matthew 3",
+    "psalm_or_gospel": "Psalm 148"
+  },
+  {
+    "day": 299,
+    "date": "October 25",
+    "old_testament": "Ezekiel 9",
+    "new_testament": "Mark 4",
+    "psalm_or_gospel": "Psalm 149"
+  },
+  {
+    "day": 300,
+    "date": "October 26",
+    "old_testament": "Daniel 10",
+    "new_testament": "Luke 5",
+    "psalm_or_gospel": "Psalm 150"
+  },
+  {
+    "day": 301,
+    "date": "October 27",
+    "old_testament": "Hosea 1",
+    "new_testament": "John 1",
+    "psalm_or_gospel": "Psalm 1"
+  },
+  {
+    "day": 302,
+    "date": "October 28",
+    "old_testament": "Joel 2",
+    "new_testament": "Acts 2",
+    "psalm_or_gospel": "Psalm 2"
+  },
+  {
+    "day": 303,
+    "date": "October 29",
+    "old_testament": "Amos 3",
+    "new_testament": "Romans 3",
+    "psalm_or_gospel": "Psalm 3"
+  },
+  {
+    "day": 304,
+    "date": "October 30",
+    "old_testament": "Obadiah 4",
+    "new_testament": "1 Corinthians 4",
+    "psalm_or_gospel": "Psalm 4"
+  },
+  {
+    "day": 305,
+    "date": "October 31",
+    "old_testament": "Jonah 5",
+    "new_testament": "2 Corinthians 5",
+    "psalm_or_gospel": "Psalm 5"
+  },
+  {
+    "day": 306,
+    "date": "November 01",
+    "old_testament": "Micah 6",
+    "new_testament": "Galatians 1",
+    "psalm_or_gospel": "Psalm 6"
+  },
+  {
+    "day": 307,
+    "date": "November 02",
+    "old_testament": "Nahum 7",
+    "new_testament": "Ephesians 2",
+    "psalm_or_gospel": "Psalm 7"
+  },
+  {
+    "day": 308,
+    "date": "November 03",
+    "old_testament": "Habakkuk 8",
+    "new_testament": "Philippians 3",
+    "psalm_or_gospel": "Psalm 8"
+  },
+  {
+    "day": 309,
+    "date": "November 04",
+    "old_testament": "Zephaniah 9",
+    "new_testament": "Colossians 4",
+    "psalm_or_gospel": "Psalm 9"
+  },
+  {
+    "day": 310,
+    "date": "November 05",
+    "old_testament": "Haggai 10",
+    "new_testament": "1 Thessalonians 5",
+    "psalm_or_gospel": "Psalm 10"
+  },
+  {
+    "day": 311,
+    "date": "November 06",
+    "old_testament": "Zechariah 1",
+    "new_testament": "2 Thessalonians 1",
+    "psalm_or_gospel": "Psalm 11"
+  },
+  {
+    "day": 312,
+    "date": "November 07",
+    "old_testament": "Malachi 2",
+    "new_testament": "1 Timothy 2",
+    "psalm_or_gospel": "Psalm 12"
+  },
+  {
+    "day": 313,
+    "date": "November 08",
+    "old_testament": "Genesis 3",
+    "new_testament": "2 Timothy 3",
+    "psalm_or_gospel": "Psalm 13"
+  },
+  {
+    "day": 314,
+    "date": "November 09",
+    "old_testament": "Exodus 4",
+    "new_testament": "Titus 4",
+    "psalm_or_gospel": "Psalm 14"
+  },
+  {
+    "day": 315,
+    "date": "November 10",
+    "old_testament": "Leviticus 5",
+    "new_testament": "Philemon 5",
+    "psalm_or_gospel": "Psalm 15"
+  },
+  {
+    "day": 316,
+    "date": "November 11",
+    "old_testament": "Numbers 6",
+    "new_testament": "Hebrews 1",
+    "psalm_or_gospel": "Psalm 16"
+  },
+  {
+    "day": 317,
+    "date": "November 12",
+    "old_testament": "Deuteronomy 7",
+    "new_testament": "James 2",
+    "psalm_or_gospel": "Psalm 17"
+  },
+  {
+    "day": 318,
+    "date": "November 13",
+    "old_testament": "Joshua 8",
+    "new_testament": "1 Peter 3",
+    "psalm_or_gospel": "Psalm 18"
+  },
+  {
+    "day": 319,
+    "date": "November 14",
+    "old_testament": "Judges 9",
+    "new_testament": "2 Peter 4",
+    "psalm_or_gospel": "Psalm 19"
+  },
+  {
+    "day": 320,
+    "date": "November 15",
+    "old_testament": "Ruth 10",
+    "new_testament": "1 John 5",
+    "psalm_or_gospel": "Psalm 20"
+  },
+  {
+    "day": 321,
+    "date": "November 16",
+    "old_testament": "1 Samuel 1",
+    "new_testament": "2 John 1",
+    "psalm_or_gospel": "Psalm 21"
+  },
+  {
+    "day": 322,
+    "date": "November 17",
+    "old_testament": "2 Samuel 2",
+    "new_testament": "3 John 2",
+    "psalm_or_gospel": "Psalm 22"
+  },
+  {
+    "day": 323,
+    "date": "November 18",
+    "old_testament": "1 Kings 3",
+    "new_testament": "Jude 3",
+    "psalm_or_gospel": "Psalm 23"
+  },
+  {
+    "day": 324,
+    "date": "November 19",
+    "old_testament": "2 Kings 4",
+    "new_testament": "Revelation 4",
+    "psalm_or_gospel": "Psalm 24"
+  },
+  {
+    "day": 325,
+    "date": "November 20",
+    "old_testament": "1 Chronicles 5",
+    "new_testament": "Matthew 5",
+    "psalm_or_gospel": "Psalm 25"
+  },
+  {
+    "day": 326,
+    "date": "November 21",
+    "old_testament": "2 Chronicles 6",
+    "new_testament": "Mark 1",
+    "psalm_or_gospel": "Psalm 26"
+  },
+  {
+    "day": 327,
+    "date": "November 22",
+    "old_testament": "Ezra 7",
+    "new_testament": "Luke 2",
+    "psalm_or_gospel": "Psalm 27"
+  },
+  {
+    "day": 328,
+    "date": "November 23",
+    "old_testament": "Nehemiah 8",
+    "new_testament": "John 3",
+    "psalm_or_gospel": "Psalm 28"
+  },
+  {
+    "day": 329,
+    "date": "November 24",
+    "old_testament": "Esther 9",
+    "new_testament": "Acts 4",
+    "psalm_or_gospel": "Psalm 29"
+  },
+  {
+    "day": 330,
+    "date": "November 25",
+    "old_testament": "Job 10",
+    "new_testament": "Romans 5",
+    "psalm_or_gospel": "Psalm 30"
+  },
+  {
+    "day": 331,
+    "date": "November 26",
+    "old_testament": "Psalms 1",
+    "new_testament": "1 Corinthians 1",
+    "psalm_or_gospel": "Psalm 31"
+  },
+  {
+    "day": 332,
+    "date": "November 27",
+    "old_testament": "Proverbs 2",
+    "new_testament": "2 Corinthians 2",
+    "psalm_or_gospel": "Psalm 32"
+  },
+  {
+    "day": 333,
+    "date": "November 28",
+    "old_testament": "Ecclesiastes 3",
+    "new_testament": "Galatians 3",
+    "psalm_or_gospel": "Psalm 33"
+  },
+  {
+    "day": 334,
+    "date": "November 29",
+    "old_testament": "Song of Songs 4",
+    "new_testament": "Ephesians 4",
+    "psalm_or_gospel": "Psalm 34"
+  },
+  {
+    "day": 335,
+    "date": "November 30",
+    "old_testament": "Isaiah 5",
+    "new_testament": "Philippians 5",
+    "psalm_or_gospel": "Psalm 35"
+  },
+  {
+    "day": 336,
+    "date": "December 01",
+    "old_testament": "Jeremiah 6",
+    "new_testament": "Colossians 1",
+    "psalm_or_gospel": "Psalm 36"
+  },
+  {
+    "day": 337,
+    "date": "December 02",
+    "old_testament": "Lamentations 7",
+    "new_testament": "1 Thessalonians 2",
+    "psalm_or_gospel": "Psalm 37"
+  },
+  {
+    "day": 338,
+    "date": "December 03",
+    "old_testament": "Ezekiel 8",
+    "new_testament": "2 Thessalonians 3",
+    "psalm_or_gospel": "Psalm 38"
+  },
+  {
+    "day": 339,
+    "date": "December 04",
+    "old_testament": "Daniel 9",
+    "new_testament": "1 Timothy 4",
+    "psalm_or_gospel": "Psalm 39"
+  },
+  {
+    "day": 340,
+    "date": "December 05",
+    "old_testament": "Hosea 10",
+    "new_testament": "2 Timothy 5",
+    "psalm_or_gospel": "Psalm 40"
+  },
+  {
+    "day": 341,
+    "date": "December 06",
+    "old_testament": "Joel 1",
+    "new_testament": "Titus 1",
+    "psalm_or_gospel": "Psalm 41"
+  },
+  {
+    "day": 342,
+    "date": "December 07",
+    "old_testament": "Amos 2",
+    "new_testament": "Philemon 2",
+    "psalm_or_gospel": "Psalm 42"
+  },
+  {
+    "day": 343,
+    "date": "December 08",
+    "old_testament": "Obadiah 3",
+    "new_testament": "Hebrews 3",
+    "psalm_or_gospel": "Psalm 43"
+  },
+  {
+    "day": 344,
+    "date": "December 09",
+    "old_testament": "Jonah 4",
+    "new_testament": "James 4",
+    "psalm_or_gospel": "Psalm 44"
+  },
+  {
+    "day": 345,
+    "date": "December 10",
+    "old_testament": "Micah 5",
+    "new_testament": "1 Peter 5",
+    "psalm_or_gospel": "Psalm 45"
+  },
+  {
+    "day": 346,
+    "date": "December 11",
+    "old_testament": "Nahum 6",
+    "new_testament": "2 Peter 1",
+    "psalm_or_gospel": "Psalm 46"
+  },
+  {
+    "day": 347,
+    "date": "December 12",
+    "old_testament": "Habakkuk 7",
+    "new_testament": "1 John 2",
+    "psalm_or_gospel": "Psalm 47"
+  },
+  {
+    "day": 348,
+    "date": "December 13",
+    "old_testament": "Zephaniah 8",
+    "new_testament": "2 John 3",
+    "psalm_or_gospel": "Psalm 48"
+  },
+  {
+    "day": 349,
+    "date": "December 14",
+    "old_testament": "Haggai 9",
+    "new_testament": "3 John 4",
+    "psalm_or_gospel": "Psalm 49"
+  },
+  {
+    "day": 350,
+    "date": "December 15",
+    "old_testament": "Zechariah 10",
+    "new_testament": "Jude 5",
+    "psalm_or_gospel": "Psalm 50"
+  },
+  {
+    "day": 351,
+    "date": "December 16",
+    "old_testament": "Malachi 1",
+    "new_testament": "Revelation 1",
+    "psalm_or_gospel": "Psalm 51"
+  },
+  {
+    "day": 352,
+    "date": "December 17",
+    "old_testament": "Genesis 2",
+    "new_testament": "Matthew 2",
+    "psalm_or_gospel": "Psalm 52"
+  },
+  {
+    "day": 353,
+    "date": "December 18",
+    "old_testament": "Exodus 3",
+    "new_testament": "Mark 3",
+    "psalm_or_gospel": "Psalm 53"
+  },
+  {
+    "day": 354,
+    "date": "December 19",
+    "old_testament": "Leviticus 4",
+    "new_testament": "Luke 4",
+    "psalm_or_gospel": "Psalm 54"
+  },
+  {
+    "day": 355,
+    "date": "December 20",
+    "old_testament": "Numbers 5",
+    "new_testament": "John 5",
+    "psalm_or_gospel": "Psalm 55"
+  },
+  {
+    "day": 356,
+    "date": "December 21",
+    "old_testament": "Deuteronomy 6",
+    "new_testament": "Acts 1",
+    "psalm_or_gospel": "Psalm 56"
+  },
+  {
+    "day": 357,
+    "date": "December 22",
+    "old_testament": "Joshua 7",
+    "new_testament": "Romans 2",
+    "psalm_or_gospel": "Psalm 57"
+  },
+  {
+    "day": 358,
+    "date": "December 23",
+    "old_testament": "Judges 8",
+    "new_testament": "1 Corinthians 3",
+    "psalm_or_gospel": "Psalm 58"
+  },
+  {
+    "day": 359,
+    "date": "December 24",
+    "old_testament": "Ruth 9",
+    "new_testament": "2 Corinthians 4",
+    "psalm_or_gospel": "Psalm 59"
+  },
+  {
+    "day": 360,
+    "date": "December 25",
+    "old_testament": "1 Samuel 10",
+    "new_testament": "Galatians 5",
+    "psalm_or_gospel": "Psalm 60"
+  },
+  {
+    "day": 361,
+    "date": "December 26",
+    "old_testament": "2 Samuel 1",
+    "new_testament": "Ephesians 1",
+    "psalm_or_gospel": "Psalm 61"
+  },
+  {
+    "day": 362,
+    "date": "December 27",
+    "old_testament": "1 Kings 2",
+    "new_testament": "Philippians 2",
+    "psalm_or_gospel": "Psalm 62"
+  },
+  {
+    "day": 363,
+    "date": "December 28",
+    "old_testament": "2 Kings 3",
+    "new_testament": "Colossians 3",
+    "psalm_or_gospel": "Psalm 63"
+  },
+  {
+    "day": 364,
+    "date": "December 29",
+    "old_testament": "1 Chronicles 4",
+    "new_testament": "1 Thessalonians 4",
+    "psalm_or_gospel": "Psalm 64"
+  },
+  {
+    "day": 365,
+    "date": "December 30",
+    "old_testament": "2 Chronicles 5",
+    "new_testament": "2 Thessalonians 5",
+    "psalm_or_gospel": "Psalm 65"
+  }
+]

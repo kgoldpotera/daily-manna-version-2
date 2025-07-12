@@ -1,0 +1,11 @@
+project-folder/
+│
+├── main.py
+├── .env
+├── routes/
+│   ├── __init__.py
+│   ├── users.py
+│   └── read_tracker.py
+├── utils/
+│   ├── __init__.py
+│   └── whatsapp.py

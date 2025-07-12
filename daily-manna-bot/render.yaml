@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: daily-manna-api
+    env: python
+    buildCommand: python -m pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: ULTRAMSG_INSTANCE_ID
+        value: your_instance_id
+      - key: ULTRAMSG_TOKEN
+        value: your_token
+      - key: SUPABASE_URL
+        value: your_supabase_url
+      - key: SUPABASE_KEY
+        value: your_supabase_anon_key
+      - key: DEBUG
+        value: "false"
