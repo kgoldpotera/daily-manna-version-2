@@ -86,10 +86,15 @@ client.on('ready', () => {
 
 // Listen for incoming messages
 client.on('message', async message => {
+    console.log(`\n📨 [DEBUG] Incoming Message: "${message.body}" from ${message.from}`);
+    
     // Ignore status updates and WhatsApp Channels (Newsletters) to prevent AI spam
     if (message.from === 'status@broadcast' || message.from.includes('@newsletter')) {
+        console.log(`[DEBUG] Ignored broadcast/newsletter from ${message.from}`);
         return;
     }
+    
+    console.log(`[DEBUG] Processing message from ${message.from}...`);
     
     let resolvedAuthor = message.author || message.from;
     
@@ -133,7 +138,8 @@ client.on('message', async message => {
     
     try {
         // We structure the payload to match exactly what your FastAPI webhook expects
-        await axios.post(WEBHOOK_URL, {
+        console.log(`[DEBUG] Attempting to forward webhook to FastAPI at ${WEBHOOK_URL}...`);
+        const response = await axios.post(WEBHOOK_URL, {
             event: "onMessage",
             data: {
                 from: message.from,
@@ -149,8 +155,9 @@ client.on('message', async message => {
         }, {
             headers: { "x-webhook-secret": WEBHOOK_SECRET }
         });
+        console.log(`[DEBUG] Webhook forwarded successfully! Server replied with status: ${response.status}`);
     } catch (e) {
-        console.error("Failed to forward webhook to FastAPI:", e.message);
+        console.error(`[DEBUG ERROR] Failed to forward webhook to FastAPI:`, e.message);
     }
 });
 
