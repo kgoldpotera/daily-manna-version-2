@@ -59,6 +59,7 @@ const client = new Client({
         store: store,
         backupSyncIntervalMs: 300000 // Sync to DB every 5 minutes
     }),
+    authTimeoutMs: 0, // Disable auth timeout for extremely slow servers like e2-micro
     puppeteer: {
         headless: true, // We can run headless because we will print the QR code to the terminal!
         args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
