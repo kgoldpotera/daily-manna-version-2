@@ -9,7 +9,7 @@ const axios = require('axios');
 const app = express();
 app.use(express.json());
 
-const WEBHOOK_URL = "http://localhost:8000/api/v1/webhook";
+const WEBHOOK_URL = "http://127.0.0.1:8000/api/v1/webhook";
 const PORT = 8001;
 const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET || "daily_manna_secret_token_123";
 
