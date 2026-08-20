@@ -1,13 +1,29 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api.routes import router
+from app.api.webhooks import router as webhook_router
 from app.config import settings
+from app.services.scheduler import start_scheduler
+
+from contextlib import asynccontextmanager
+import sys
+import asyncio
+
+if sys.platform == 'win32':
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    print("🚀 API starting up...")
+    print(f"🌍 Debug Mode: {settings.DEBUG}")
+    start_scheduler()
+    yield
 
 # Create FastAPI app
 app = FastAPI(
-    title="Daily Manna API",
-    description="WhatsApp bot for daily Bible reading",
-    version="1.0.0"
+    title="Church Management Platform API",
+    description="Multi-tenant WhatsApp-native church platform",
+    version="1.0.0",
+    lifespan=lifespan
 )
 
 # Add CORS middleware
@@ -19,20 +35,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Include routes
-app.include_router(router)
+# Include webhook routes
+app.include_router(webhook_router, prefix="/api/v1")
 
-@app.on_event("startup")
-async def startup_event():
-    """Application startup"""
-    print("🚀 Daily Manna API starting up...")
-    print(f"📊 Debug mode: {settings.DEBUG}")
-    print("✅ Daily Manna API is ready!")
+@app.get("/")
+async def home():
+    return {"message": "✅ Church Management Platform is running."}
 
-@app.on_event("shutdown")
-async def shutdown_event():
-    """Application shutdown"""
-    print("👋 Daily Manna API shutting down...")
 
 if __name__ == "__main__":
     import uvicorn
@@ -40,5 +49,6 @@ if __name__ == "__main__":
         "app.main:app",
         host="0.0.0.0",
         port=8000,
-        reload=settings.DEBUG
+        reload=settings.DEBUG,
+        reload_dirs=["app"]
     )

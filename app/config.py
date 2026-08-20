@@ -7,33 +7,33 @@ env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path)
 
 class Settings:
-    # UltraMsg Configuration
-    ULTRAMSG_INSTANCE_ID: str = os.getenv("ULTRAMSG_INSTANCE_ID", "")
-    ULTRAMSG_TOKEN: str = os.getenv("ULTRAMSG_TOKEN", "")
+    # OpenWA Configuration
+    OPENWA_URL: str = os.getenv("OPENWA_URL", "http://localhost:8001")
     
     # Supabase Configuration
     SUPABASE_URL: str = os.getenv("SUPABASE_URL", "")
     SUPABASE_KEY: str = os.getenv("SUPABASE_KEY", "")
+
+    # Groq AI Configuration
+    # Fallback lists support comma-separated values
+    GROQ_API_KEYS: str = os.getenv("GROQ_API_KEYS", os.getenv("GROQ_API_KEY", ""))
+    GROQ_MODELS: str = os.getenv("GROQ_MODELS", "openai/gpt-oss-120b,openai/gpt-oss-20b,qwen/qwen3.6-27b")
     
     # Application Configuration
+    APP_SECRET: str = os.getenv("APP_SECRET", "default_secret_key")
+    WEBHOOK_SECRET: str = os.getenv("WEBHOOK_SECRET", "daily_manna_secret_token_123")
     DEBUG: bool = os.getenv("DEBUG", "False").lower() == "true"
-    
-    @property
-    def ultramsg_api_url(self) -> str:
-        return f"https://api.ultramsg.com/{self.ULTRAMSG_INSTANCE_ID}/messages/chat"
     
     def validate(self) -> bool:
         """Validate that all required environment variables are set"""
         required_vars = [
-            self.ULTRAMSG_INSTANCE_ID,
-            self.ULTRAMSG_TOKEN,
             self.SUPABASE_URL,
             self.SUPABASE_KEY
         ]
-        return all(var for var in required_vars)
+        return all(required_vars)
 
 settings = Settings()
 
 # Validate configuration on startup
 if not settings.validate():
-    raise ValueError("❌ Missing required environment variables. Check your .env file.")
+    raise ValueError("❌ Missing required environment variables (SUPABASE_URL or SUPABASE_KEY). Check your .env file.")

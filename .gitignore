@@ -1,2 +1,10 @@
 node_modules/
 .env
+
+# managed
+.wwebjs_auth/
+.wwebjs_cache/
+**.data.json
+**.node-persist**
+**_IGNORE_**
+# end managed
