@@ -61,7 +61,8 @@ const client = new Client({
     }),
     puppeteer: {
         headless: true, // We can run headless because we will print the QR code to the terminal!
-        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+        protocolTimeout: 0 // Disable timeout for extremely slow servers like e2-micro
     }
 });
 
