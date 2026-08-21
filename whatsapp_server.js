@@ -93,6 +93,11 @@ client.on('ready', () => {
     console.log('\n✅ WhatsApp Web Client is Ready and Connected!');
 });
 
+// Show loading progress
+client.on('loading_screen', (percent, message) => {
+    console.log(`⏳ LOADING SCREEN: ${percent}% - ${message}`);
+});
+
 // Listen for incoming messages
 client.on('message', async message => {
     console.log(`\n📨 [DEBUG] Incoming Message: "${message.body}" from ${message.from}`);
