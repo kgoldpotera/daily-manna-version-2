@@ -237,4 +237,8 @@ app.listen(PORT, () => {
 });
 
 
+if (!fs.existsSync('.wwebjs_auth')) {
+    fs.mkdirSync('.wwebjs_auth');
+}
+
 client.initialize();
