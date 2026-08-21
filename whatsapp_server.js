@@ -60,6 +60,7 @@ const client = new Client({
         backupSyncIntervalMs: 300000 // Sync to DB every 5 minutes
     }),
     authTimeoutMs: 600000, // 10 minutes (0 might evaluate to default 60s in some versions)
+    webVersionCache: { type: 'none' }, // Bypass cache to prevent forced WhatsApp Web reloads
     puppeteer: {
         headless: true, // We can run headless because we will print the QR code to the terminal!
         args: [
