@@ -18,15 +18,11 @@ async def generate_dynamic_devotional(scripture_ref: str) -> dict:
         return {}
 
     prompt = f"""You are an expert, biblically grounded pastoral scholar.
-Given today's assigned Bible reading passage: '{scripture_ref}', generate a deep, contextually accurate 7-part devotional guide strictly in JSON format.
+Given today's assigned Bible reading passage: '{scripture_ref}', generate a concise daily devotional guide strictly in JSON format.
 
 JSON keys required:
-- what_we_read: (Detailed 3-4 sentences summarizing major events, arguments, themes, people, and movements in {scripture_ref})
-- teaches_about_god: (What {scripture_ref} specifically reveals about God's holiness, grace, sovereignty, justice, or faithfulness)
-- seeing_christ: (How {scripture_ref} contributes to the redemptive storyline and points toward Christ or the gospel without forcing symbolic interpretations)
-- take_to_heart: (3 bullet points • of practical applications for believers today based on {scripture_ref})
 - todays_prayer: (Short 2-3 sentence scripture-shaped prayer arising naturally from {scripture_ref})
-- verse_to_remember: (Exact quote of one significant verse from {scripture_ref})
+- verse_to_remember: (Exact quote of one significant, punchy verse from {scripture_ref} that contains a call to action for the users to think about)
 - verse_reference: (Exact reference for the quoted verse, e.g. {scripture_ref.split(';')[0]})
 """
     try:
@@ -36,7 +32,7 @@ JSON keys required:
         response = await chat_completion_with_fallback(
             messages=[{"role": "system", "content": prompt}],
             temperature=0.7,
-            max_tokens=3000,
+            max_tokens=1000,
             response_format={"type": "json_object"}
         )
         raw_json = response.choices[0].message.content
@@ -48,7 +44,7 @@ JSON keys required:
 async def run_daily_manna_broadcast() -> None:
     """
     Query reading_plans for today's entry, query registered groups, 
-    and format the devotional broadcast card using the 7-part Daily Reading Structure.
+    and format the devotional broadcast card using the condensed structure.
     """
     print("Starting Daily Manna Broadcast...")
     today_dt = datetime.date.today()
@@ -80,29 +76,21 @@ async def run_daily_manna_broadcast() -> None:
         print("No registered groups found. Broadcast cancelled.")
         return
 
-    # Extract 7-part reading fields
+    # Extract required fields
     day_num = reading_plan.get("day_number", reading_plan.get("day", day_of_year))
     date_str = reading_plan.get("date", today_dt.strftime("%B %d").upper())
     scripture_ref = reading_plan.get("scripture_reference", "Mark 1-3")
     
-    what_we_read = reading_plan.get("what_we_read", "")
-    teaches_about_god = reading_plan.get("teaches_about_god", "")
-    seeing_christ = reading_plan.get("seeing_christ", "")
-    take_to_heart = reading_plan.get("take_to_heart", "")
     todays_prayer = reading_plan.get("todays_prayer", "")
     verse_quote = reading_plan.get("verse_to_remember", "")
     verse_ref = reading_plan.get("verse_reference", scripture_ref.split(';')[0] if ';' in scripture_ref else scripture_ref)
     plan_id = reading_plan.get("id", f"DAY_{day_num}")
 
     # Dynamically generate deep AI devotional content if generic or empty
-    if not what_we_read or "scheduled passages" in what_we_read:
-        print(f"Generating dynamic deep AI devotional for passage: '{scripture_ref}'...")
+    if not todays_prayer or not verse_quote:
+        print(f"Generating dynamic concise AI devotional for passage: '{scripture_ref}'...")
         ai_dev = await generate_dynamic_devotional(scripture_ref)
         if ai_dev:
-            what_we_read = ai_dev.get("what_we_read", what_we_read)
-            teaches_about_god = ai_dev.get("teaches_about_god", teaches_about_god)
-            seeing_christ = ai_dev.get("seeing_christ", seeing_christ)
-            take_to_heart = ai_dev.get("take_to_heart", take_to_heart)
             todays_prayer = ai_dev.get("todays_prayer", todays_prayer)
             verse_quote = ai_dev.get("verse_to_remember", verse_quote)
             verse_ref = ai_dev.get("verse_reference", verse_ref)
@@ -126,28 +114,16 @@ async def run_daily_manna_broadcast() -> None:
 Today's Reading:
 {scripture_ref}
 
-🔎 What We Read
-{what_we_read}
-
-💡 What It Teaches Us About God
-{teaches_about_god}
-
-✝️ Seeing Christ and the Gospel
-{seeing_christ}
-
-❤️ What Should We Take to Heart?
-{take_to_heart}
-
-🙏 Today's Prayer
-{todays_prayer}
+🔗 Read the full chapters here: 
+{bible_gateway_url}
 
 📌 Verse to Remember
 "{verse_quote}" — {verse_ref}
 
-----------------------------------
-🔗 Read the full chapters here: 
-{bible_gateway_url}
+🙏 Today's Prayer
+{todays_prayer}
 
+----------------------------------
 💡 Want to study deeper? 
 Tap here to reflect with the AI Bible Assistant: 
 {dm_link}"""
