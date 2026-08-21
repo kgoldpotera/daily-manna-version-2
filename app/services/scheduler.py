@@ -22,8 +22,8 @@ Given today's assigned Bible reading passage: '{scripture_ref}', generate a conc
 
 JSON keys required:
 - todays_prayer: (Short 2-3 sentence scripture-shaped prayer arising naturally from {scripture_ref})
-- verse_to_remember: (Exact quote of one significant, punchy verse from {scripture_ref} that contains a call to action for the users to think about)
-- verse_reference: (Exact reference for the quoted verse, e.g. {scripture_ref.split(';')[0]})
+- verse_to_remember: (Exact quote of ONE single, specific verse from {scripture_ref} that contains a call to action for the users to think about. DO NOT quote an entire chapter.)
+- verse_reference: (Exact reference for the quoted verse, including the specific chapter AND verse number, e.g. Matthew 3:2, NOT just Matthew 3)
 """
     try:
         from app.services.ai_client import chat_completion_with_fallback
@@ -105,9 +105,9 @@ async def run_daily_manna_broadcast() -> None:
     else:
         dm_link = f"https://wa.me/?text=STUDY_{plan_id}"
 
-    # Generate BibleGateway NIV Link
+    # Generate BibleGateway ESV Link
     clean_ref = scripture_ref.replace("; ", ",").replace(" ", "+")
-    bible_gateway_url = f"https://www.biblegateway.com/passage/?search={clean_ref}&version=NIV"
+    bible_gateway_url = f"https://www.biblegateway.com/passage/?search={clean_ref}&version=ESV"
 
     broadcast_text = f"""📖 DAY {day_num}/365 — {date_str}
 
