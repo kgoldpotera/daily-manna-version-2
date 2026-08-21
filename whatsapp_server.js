@@ -1,5 +1,7 @@
 require('dotenv').config();
-const { Client, LocalAuth } = require('whatsapp-web.js');
+const { Client, RemoteAuth } = require('whatsapp-web.js');
+const { PostgresStore } = require('wwebjs-postgres');
+const { Pool } = require('pg');
 const qrcode = require('qrcode-terminal');
 const express = require('express');
 const axios = require('axios');
@@ -13,9 +15,51 @@ const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET || "daily_manna_secret_token_1
 
 console.log("Initializing whatsapp-web.js...");
 
+if (!process.env.SUPABASE_DB_URL) {
+    console.error("CRITICAL ERROR: SUPABASE_DB_URL is missing in environment variables. RemoteAuth requires it.");
+    process.exit(1);
+}
+
+// Initialize Postgres connection pool for RemoteAuth
+const pool = new Pool({
+    connectionString: process.env.SUPABASE_DB_URL,
+    ssl: { rejectUnauthorized: false } // Required for Supabase connections
+});
+
+const store = new PostgresStore({ pool: pool });
+
+// Monkey-patch to fix a known bug in wwebjs-postgres where it expects the zip file in the root directory
+const fs = require('fs');
+const path = require('path');
+const originalSave = store.save.bind(store);
+store.save = async (options) => {
+    const sessionName = options.session;
+    // whatsapp-web.js saves the zip here:
+    const actualZipPath = path.join('.wwebjs_auth', `${sessionName}.zip`);
+    // wwebjs-postgres incorrectly looks for it here:
+    const buggyExpectedPath = `${sessionName}.zip`;
+
+    if (fs.existsSync(actualZipPath)) {
+        fs.copyFileSync(actualZipPath, buggyExpectedPath);
+    }
+    
+    try {
+        await originalSave(options);
+    } finally {
+        if (fs.existsSync(buggyExpectedPath)) {
+            fs.unlinkSync(buggyExpectedPath);
+        }
+    }
+};
+
 // Initialize the client
 const client = new Client({
-    authStrategy: new LocalAuth({ clientId: "CHURCH_BOT" }),
+    authStrategy: new RemoteAuth({ 
+        clientId: "CHURCH_BOT",
+        store: store,
+        backupSyncIntervalMs: 300000 // Sync to DB every 5 minutes
+    }),
+    authTimeoutMs: 0, // Disable auth timeout for extremely slow servers like e2-micro
     puppeteer: {
         headless: true, // We can run headless because we will print the QR code to the terminal!
         args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
