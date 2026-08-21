@@ -230,17 +230,36 @@ async def handle_ai_message(phone_number: str, chat_id: str, text: str) -> None:
         
         # Fetch the reading plan
         try:
-            plan_resp = supabase_client.table("reading_plans").select("*").eq("id", plan_id).execute()
-            if not plan_resp.data:
-                await send_text_message(chat_id, "I couldn't find that specific reading plan. But I'm here if you have any questions!")
-                return
+            if plan_id == "TODAY":
+                import datetime
+                today_iso = datetime.date.today().isoformat()
+                plan_resp = supabase_client.table("reading_plans").select("*").eq("scheduled_date", today_iso).execute()
+                
+                if not plan_resp.data:
+                    # Fallback to local json reading plan
+                    from app.services.bible_service import bible_service
+                    day_of_year = datetime.date.today().timetuple().tm_yday
+                    idx = min(day_of_year - 1, len(bible_service.reading_plan) - 1)
+                    plan_data = bible_service.reading_plan[idx] if bible_service.reading_plan else {}
+                    
+                    scripture_ref = plan_data.get("scripture_reference", f"{plan_data.get('old_testament', '')}; {plan_data.get('new_testament', '')}")
+                    discussion = plan_data.get("discussion_question", "What did you learn about God in today's reading?")
+                    reading_plan = {"scripture_reference": scripture_ref, "discussion_question": discussion}
+                else:
+                    reading_plan = plan_resp.data[0]
+            else:
+                plan_resp = supabase_client.table("reading_plans").select("*").eq("id", plan_id).execute()
+                if not plan_resp.data:
+                    await send_text_message(chat_id, "I couldn't find that specific reading plan. But I'm here if you have any questions!")
+                    return
+                reading_plan = plan_resp.data[0]
+                
         except Exception as e:
             print(f"DEBUG: Supabase query failed for plan ID {plan_id}: {e}")
             await send_text_message(chat_id, "That doesn't look like a valid study link. Make sure you click the exact link from the Daily Manna broadcast!")
             return
             
-        reading_plan = plan_resp.data[0]
-        welcome_msg = f"Welcome to today's study on {reading_plan.get('scripture_reference')}! What are your thoughts on the discussion question:\n'{reading_plan.get('discussion_question')}'"
+        welcome_msg = f"Welcome to today's study on {reading_plan.get('scripture_reference', 'the Bible')}! What are your thoughts on the discussion question:\n'{reading_plan.get('discussion_question', 'What stood out to you in this passage?')}'"
         
         await send_text_message(chat_id, welcome_msg)
         
