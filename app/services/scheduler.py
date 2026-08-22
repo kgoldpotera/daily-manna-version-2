@@ -22,9 +22,11 @@ async def generate_dynamic_devotional(scripture_ref: str) -> dict:
 Given today's assigned Bible reading passage: '{scripture_ref}', generate a concise daily devotional guide strictly in JSON format.
 
 JSON keys required:
-- todays_prayer: (Short 2-3 sentence scripture-shaped prayer arising naturally from {scripture_ref})
+- todays_focus: (A 2-3 sentence key theme or focus point of the reading)
 - verse_to_remember: (Exact quote of ONE single, specific verse from {scripture_ref} that contains a call to action for the users to think about. DO NOT quote an entire chapter.)
 - verse_reference: (Exact reference for the quoted verse, including the specific chapter AND verse number, e.g. Matthew 3:2, NOT just Matthew 3)
+- todays_prayer: (Short 2-3 sentence scripture-shaped prayer arising naturally from {scripture_ref})
+- go_deeper_question: (A single thought-provoking question based on the reading for further reflection)
 """
     try:
         from app.services.ai_client import chat_completion_with_fallback
@@ -95,6 +97,14 @@ async def run_daily_manna_broadcast() -> None:
             todays_prayer = ai_dev.get("todays_prayer", todays_prayer)
             verse_quote = ai_dev.get("verse_to_remember", verse_quote)
             verse_ref = ai_dev.get("verse_reference", verse_ref)
+            todays_focus = ai_dev.get("todays_focus", "Focus on what God is saying through today's reading.")
+            go_deeper_question = ai_dev.get("go_deeper_question", "What is God speaking to you through this passage?")
+        else:
+            todays_focus = "Focus on what God is saying through today's reading."
+            go_deeper_question = "What is God speaking to you through this passage?"
+    else:
+        todays_focus = reading_plan.get("todays_focus", "Focus on what God is saying through today's reading.")
+        go_deeper_question = reading_plan.get("go_deeper_question", "What is God speaking to you through this passage?")
 
 
     # Build bot phone number for direct DM link
@@ -112,22 +122,36 @@ async def run_daily_manna_broadcast() -> None:
 
     broadcast_text = f"""📖 DAY {day_num}/365 — {date_str}
 
-Today's Reading:
-{scripture_ref}
+Today’s Reading
+📜 {scripture_ref.replace(';', '\\n📖')}
 
-🔗 Read the full chapters here: 
+🔗 Read the full chapters:
 {bible_gateway_url}
 
-📌 Verse to Remember
-"{verse_quote}" — {verse_ref}
+💡 TODAY’S FOCUS
 
-🙏 Today's Prayer
+{todays_focus}
+
+📌 VERSE TO REMEMBER
+
+«"{verse_quote}"
+— {verse_ref}»
+
+🙏 TODAY’S PRAYER
+
 {todays_prayer}
 
-----------------------------------
-💡 Want to study deeper? 
-Tap here to reflect with the AI Bible Assistant: 
-{dm_link}"""
+💡 GO DEEPER
+
+{go_deeper_question}
+
+Ask the AI Bible Assistant about today's reading. Explore the Scriptures, ask questions, and reflect on how God's Word applies to your life.
+
+👉 {dm_link}
+
+━━━━━━━━━━━━━━━━━━
+📖 365 DAYS • ONE BIBLE • ONE JOURNEY
+Keep reading. Keep walking. Keep growing."""
 
     from app.core.utils import split_long_message
     chunks = split_long_message(broadcast_text, max_chars=1200)
