@@ -205,6 +205,12 @@ app.post('/api/sendText', async (req, res) => {
     } catch (e) {
         console.error("Send Text Error:", e);
         res.status(500).json({ success: false, error: e.message });
+        
+        // Critical Puppeteer failure detection
+        if (e.message.includes('detached Frame') || e.message.includes('Target closed') || e.message.includes('Session closed')) {
+            console.error("CRITICAL FATAL ERROR: Puppeteer frame detached or closed. Exiting process so PM2 can restart and recover the session...");
+            process.exit(1);
+        }
     }
 });
 
@@ -229,6 +235,11 @@ app.post('/api/sendButtons', async (req, res) => {
     } catch (e) {
         console.error("Send Buttons Error:", e);
         res.status(500).json({ success: false, error: e.message });
+        
+        if (e.message.includes('detached Frame') || e.message.includes('Target closed') || e.message.includes('Session closed')) {
+            console.error("CRITICAL FATAL ERROR: Puppeteer frame detached or closed. Exiting process so PM2 can restart and recover the session...");
+            process.exit(1);
+        }
     }
 });
 
@@ -241,6 +252,12 @@ app.listen(PORT, () => {
     console.log(`🚀 Custom WhatsApp API Server listening on http://localhost:${PORT}`);
 });
 
+
+client.on('disconnected', (reason) => {
+    console.error('Client was logged out or disconnected', reason);
+    console.error('Exiting process to trigger PM2 restart...');
+    process.exit(1);
+});
 
 if (!fs.existsSync('.wwebjs_auth')) {
     fs.mkdirSync('.wwebjs_auth');

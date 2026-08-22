@@ -1,8 +1,10 @@
 import httpx
 from app.config import settings
 
-async def send_text_message(to: str, text: str) -> dict:
-    """Helper function to send a simple text message via OpenWA."""
+import asyncio
+
+async def send_text_message(to: str, text: str, max_retries: int = 3) -> dict:
+    """Helper function to send a simple text message via OpenWA with retry logic."""
     url = f"{settings.OPENWA_URL}/api/sendText"
     
     payload = {
@@ -12,13 +14,23 @@ async def send_text_message(to: str, text: str) -> dict:
     }
     
     async with httpx.AsyncClient() as client:
-        try:
-            response = await client.post(url, json=payload)
-            response.raise_for_status()
-            return response.json()
-        except Exception as e:
-            print(f"Failed to send text message to {to}: {e}")
-            return {}
+        for attempt in range(max_retries):
+            try:
+                response = await client.post(url, json=payload, timeout=15.0)
+                response.raise_for_status()
+                data = response.json()
+                if not data.get("success"):
+                    raise Exception(data.get("error", "Unknown error from WhatsApp server"))
+                return data
+            except Exception as e:
+                print(f"Attempt {attempt + 1}/{max_retries} failed to send text to {to}: {e}")
+                if attempt < max_retries - 1:
+                    # Exponential backoff: Wait 5s, then 10s to give the Node process time to restart
+                    await asyncio.sleep(5 * (attempt + 1))
+                else:
+                    print(f"Final failure sending text message to {to}: {e}")
+                    return {}
+        return {}
 
 async def send_interactive_button_message(to: str, body_text: str, buttons: list) -> dict:
     """Helper function to send an interactive button message via OpenWA."""
