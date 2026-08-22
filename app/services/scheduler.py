@@ -120,29 +120,27 @@ async def run_daily_manna_broadcast() -> None:
     clean_ref = scripture_ref.replace("; ", ",").replace(" ", "+")
     bible_gateway_url = f"https://www.biblegateway.com/passage/?search={clean_ref}&version=ESV"
 
+    formatted_scripture = scripture_ref.replace(';', '\n📖')
+
     broadcast_text = f"""📖 DAY {day_num}/365 — {date_str}
 
 Today’s Reading
-📜 {scripture_ref.replace(';', '\\n📖')}
+📜 {formatted_scripture}
 
 🔗 Read the full chapters:
 {bible_gateway_url}
 
 💡 TODAY’S FOCUS
-
 {todays_focus}
 
 📌 VERSE TO REMEMBER
-
-«"{verse_quote}"
-— {verse_ref}»
+"{verse_quote}"
+— {verse_ref}
 
 🙏 TODAY’S PRAYER
-
 {todays_prayer}
 
 💡 GO DEEPER
-
 {go_deeper_question}
 
 Ask the AI Bible Assistant about today's reading. Explore the Scriptures, ask questions, and reflect on how God's Word applies to your life.
