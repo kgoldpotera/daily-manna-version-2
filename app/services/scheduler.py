@@ -6,6 +6,7 @@ from app.db.supabase import supabase_client
 from app.services.whatsapp import send_text_message
 from app.config import settings
 import os
+from dotenv import load_dotenv
 
 scheduler = AsyncIOScheduler()
 
@@ -148,7 +149,23 @@ Tap here to reflect with the AI Bible Assistant:
     print("Daily Manna Broadcast completed.")
 
 
+def print_countdown():
+    """Prints a countdown to the terminal so the user knows exactly when the broadcast will run."""
+    job = scheduler.get_job("daily_manna_job")
+    if job and job.next_run_time:
+        now = datetime.datetime.now(job.next_run_time.tzinfo)
+        diff = job.next_run_time - now
+        minutes_left = int(diff.total_seconds() / 60)
+        
+        if 0 < minutes_left <= 5:
+            print(f"⏳ COUNTDOWN: Daily Manna broadcast will send in {minutes_left} minute(s)! (Target: {job.next_run_time.strftime('%H:%M %Z')})", flush=True)
+        elif minutes_left == 0:
+            print(f"🚀 COUNTDOWN: Sending broadcast NOW!", flush=True)
+
 def start_scheduler():
+    # Force reload of .env to completely bypass PM2's environment caching
+    load_dotenv(override=True)
+    
     # Use environment variable for schedule time, defaulting to 06:00
     cron_hour = int(os.getenv("BROADCAST_HOUR", "6"))
     cron_minute = int(os.getenv("BROADCAST_MINUTE", "0"))
@@ -159,5 +176,18 @@ def start_scheduler():
         id="daily_manna_job",
         replace_existing=True
     )
+    
+    # Add the countdown ticker to run every 1 minute
+    scheduler.add_job(
+        print_countdown,
+        trigger="interval",
+        minutes=1,
+        id="countdown_job",
+        replace_existing=True
+    )
+    
     scheduler.start()
-    print(f"Scheduler started. Next broadcast scheduled for {cron_hour:02d}:{cron_minute:02d} EAT daily.")
+    
+    job = scheduler.get_job("daily_manna_job")
+    if job and job.next_run_time:
+        print(f"✅ Scheduler started! Next broadcast is locked in for exactly: {job.next_run_time.strftime('%Y-%m-%d %H:%M:%S %Z')}", flush=True)
