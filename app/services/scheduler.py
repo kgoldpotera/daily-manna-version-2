@@ -155,9 +155,9 @@ def start_scheduler():
     
     scheduler.add_job(
         run_daily_manna_broadcast,
-        trigger=CronTrigger(hour=cron_hour, minute=cron_minute),
+        trigger=CronTrigger(hour=cron_hour, minute=cron_minute, timezone="Africa/Nairobi"),
         id="daily_manna_job",
         replace_existing=True
     )
     scheduler.start()
-    print(f"Scheduler started. Next broadcast scheduled for {cron_hour:02d}:{cron_minute:02d} daily.")
+    print(f"Scheduler started. Next broadcast scheduled for {cron_hour:02d}:{cron_minute:02d} EAT daily.")
