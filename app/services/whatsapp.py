@@ -25,8 +25,10 @@ async def send_text_message(to: str, text: str, max_retries: int = 3) -> dict:
             except Exception as e:
                 print(f"Attempt {attempt + 1}/{max_retries} failed to send text to {to}: {e}")
                 if attempt < max_retries - 1:
-                    # Exponential backoff: Wait 5s, then 10s to give the Node process time to restart
-                    await asyncio.sleep(5 * (attempt + 1))
+                    # Wait 15s on first fail, 30s on second fail. Puppeteer takes ~20s to boot!
+                    sleep_time = 15 if attempt == 0 else 30
+                    print(f"Sleeping for {sleep_time}s to allow Node server to recover...")
+                    await asyncio.sleep(sleep_time)
                 else:
                     print(f"Final failure sending text message to {to}: {e}")
                     return {}
