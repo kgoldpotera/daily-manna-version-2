@@ -152,7 +152,7 @@ Ask the AI Bible Assistant about today's reading. Explore the Scriptures, ask qu
 Keep reading. Keep walking. Keep growing."""
 
     from app.core.utils import split_long_message
-    chunks = split_long_message(broadcast_text, max_chars=1200)
+    chunks = split_long_message(broadcast_text, max_chars=4096)
 
     print(f"Broadcasting to {len(groups_resp.data)} groups ({len(chunks)} message parts)...")
     
