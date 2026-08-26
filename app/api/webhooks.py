@@ -95,8 +95,9 @@ async def receive_webhook(request: Request, background_tasks: BackgroundTasks):
                             group_name = parts[1] if len(parts) > 1 else "Unnamed Group"
                             await handle_group_registration(actual_sender, sender_id, group_name)
                     else:
-                        # Process group discussion (only responds if interacting with Daily Manna scripture)
-                        await handle_group_message(actual_sender, sender_id, text_body, data)
+                        # AI responses in groups have been disabled to prevent interrupting discussions
+                        # await handle_group_message(actual_sender, sender_id, text_body, data)
+                        pass
                 
                 else:
                     # Direct Message Handling
