@@ -149,7 +149,7 @@ Ask the AI Bible Assistant about today's reading. Explore the Scriptures, ask qu
 
 ━━━━━━━━━━━━━━━━━━
 📖 365 DAYS • ONE BIBLE • ONE JOURNEY
-Keep reading. Keep walking. Keep growing."""
+Keep reading. Keep praying. Keep growing."""
 
     from app.core.utils import split_long_message
     chunks = split_long_message(broadcast_text, max_chars=4096)
