@@ -38,15 +38,15 @@ class BibleService:
         try:
             if 1 <= day <= len(self.reading_plan):
                 plan_item = self.reading_plan[day - 1]
-                reading_text = f"{plan_item['old_testament']}; {plan_item['new_testament']}; {plan_item['psalm_or_gospel']}"
+                reading_text = plan_item.get('scripture_reference', f"{plan_item.get('old_testament', '')}; {plan_item.get('new_testament', '')}".strip('; '))
                 
                 return {
                     "day": day,
                     "date": plan_item.get("date", f"Day {day}"),
                     "reading": reading_text,
-                    "old_testament": plan_item["old_testament"],
-                    "new_testament": plan_item["new_testament"],
-                    "psalm_or_gospel": plan_item["psalm_or_gospel"],
+                    "old_testament": plan_item.get("old_testament", ""),
+                    "new_testament": plan_item.get("new_testament", ""),
+                    "psalm_or_gospel": plan_item.get("psalm_or_gospel", ""),
                     "link": self._generate_bible_link(reading_text, "ESV")
                 }
             else:
@@ -68,17 +68,11 @@ class BibleService:
     def _generate_bible_link(self, reference: str, version: str = "ESV") -> str:
         """Generate a link to read the Bible passage online"""
         try:
-            # Clean up the reference for URL
-            clean_ref = reference.replace("; ", ",").replace(" ", "+")
-            
-            if version.upper() == "ESV":
-                return f"https://www.esv.org/{clean_ref}/"
-            elif version.upper() == "NIV":
-                return f"https://www.biblegateway.com/passage/?search={clean_ref}&version=NIV"
-            elif version.upper() == "KJV":
-                return f"https://www.biblegateway.com/passage/?search={clean_ref}&version=KJV"
-            else:
-                return f"https://www.biblegateway.com/passage/?search={clean_ref}&version=ESV"
+            import os
+            import urllib.parse
+            web_app_url = os.getenv("WEB_APP_URL", "https://dailymannav1.vercel.app").rstrip("/")
+            clean_ref = urllib.parse.quote_plus(reference)
+            return f"{web_app_url}/read?passage={clean_ref}&version={version}"
         except Exception:
             return "https://www.bible.com"
     
