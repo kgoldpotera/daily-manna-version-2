@@ -13,6 +13,13 @@ def sanitize_bible_links(text: str) -> str:
 
     web_app_url = os.getenv("WEB_APP_URL", "https://dailymannav1.vercel.app").rstrip("/")
 
+    def normalize_passage(ref: str) -> str:
+        # Normalize 'Psalm' or 'Ps' to canonical database book name 'Psalms'
+        ref = re.sub(r'\b(psalm|ps)\b', 'Psalms', ref, flags=re.IGNORECASE)
+        # Normalize commas separating books to semicolons
+        ref = re.sub(r',\s*(?=[1-3]?\s*[a-zA-Z])', '; ', ref)
+        return ref.strip()
+
     # 1. Replace Bible Gateway passage links
     def replace_bg(match):
         full_url = match.group(0)
@@ -29,13 +36,33 @@ def sanitize_bible_links(text: str) -> str:
         target_version = "KJV" if version.upper() == "KJV" else "ESV"
 
         if search:
-            clean_search = urllib.parse.quote_plus(search)
+            clean_search = urllib.parse.quote_plus(normalize_passage(search))
             return f"{web_app_url}/read?passage={clean_search}&version={target_version}{trailing}"
         return f"{web_app_url}{trailing}"
 
     text = re.sub(r'https?://(?:www\.)?biblegateway\.com[^\s<>"\'*]*', replace_bg, text, flags=re.IGNORECASE)
 
-    # 2. Replace esv.org passage links
+    # 2. Normalize any existing Daily Manna web app links in the text
+    def normalize_web_link(match):
+        full_url = match.group(0)
+        trailing = ""
+        while full_url and full_url[-1] in [')', ']', '}', '.', ',', ';', '!', '?', '*']:
+            trailing = full_url[-1] + trailing
+            full_url = full_url[:-1]
+
+        parsed = urllib.parse.urlparse(full_url)
+        if '/read' in parsed.path:
+            qs = urllib.parse.parse_qs(parsed.query)
+            passage = qs.get("passage", [""])[0]
+            version = qs.get("version", ["ESV"])[0]
+            if passage:
+                clean_passage = urllib.parse.quote_plus(normalize_passage(passage))
+                return f"{web_app_url}/read?passage={clean_passage}&version={version}{trailing}"
+        return f"{full_url}{trailing}"
+
+    text = re.sub(r'https?://(?:www\.)?dailymannav1\.vercel\.app[^\s<>"\'*]*', normalize_web_link, text, flags=re.IGNORECASE)
+
+    # 3. Replace esv.org passage links
     def replace_esv(match):
         full_url = match.group(0)
         trailing = ""
@@ -46,13 +73,13 @@ def sanitize_bible_links(text: str) -> str:
         parsed = urllib.parse.urlparse(full_url)
         path = parsed.path.strip('/')
         if path:
-            clean_passage = urllib.parse.quote_plus(path.replace('+', ' '))
+            clean_passage = urllib.parse.quote_plus(normalize_passage(path.replace('+', ' ')))
             return f"{web_app_url}/read?passage={clean_passage}&version=ESV{trailing}"
         return f"{web_app_url}{trailing}"
 
     text = re.sub(r'https?://(?:www\.)?esv\.org[^\s<>"\'*]*', replace_esv, text, flags=re.IGNORECASE)
 
-    # 3. Replace generic external bible websites
+    # 4. Replace generic external bible websites
     def replace_generic_bible(match):
         full_url = match.group(0)
         trailing = ""
