@@ -116,9 +116,11 @@ async def run_daily_manna_broadcast() -> None:
     else:
         dm_link = f"https://wa.me/?text=STUDY_{plan_id}"
 
-    # Generate BibleGateway ESV Link
-    clean_ref = scripture_ref.replace("; ", ",").replace(" ", "+")
-    bible_gateway_url = f"https://www.biblegateway.com/passage/?search={clean_ref}&version=ESV"
+    # Generate Daily Manna Web App Link
+    import urllib.parse
+    web_app_url = os.getenv("WEB_APP_URL", "https://dailymannav1.vercel.app").rstrip("/")
+    clean_url_ref = urllib.parse.quote_plus(scripture_ref)
+    daily_manna_url = f"{web_app_url}/read?passage={clean_url_ref}&version=ESV"
 
     formatted_scripture = scripture_ref.replace(';', '\n📖')
 
@@ -128,7 +130,7 @@ Today’s Reading
 📜 {formatted_scripture}
 
 🔗 Read the full chapters:
-{bible_gateway_url}
+{daily_manna_url}
 
 💡 TODAY’S FOCUS
 {todays_focus}
