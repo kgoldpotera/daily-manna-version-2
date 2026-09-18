@@ -4,7 +4,7 @@ import asyncio
 from openai import AsyncOpenAI
 from app.db.supabase import supabase_client
 from app.services.whatsapp import send_text_message
-from app.core.utils import format_for_whatsapp, split_long_message
+from app.core.utils import format_for_whatsapp, split_long_message, sanitize_bible_links
 
 from app.services.prayer import record_prayer_request_db
 from app.services.lists import record_pledge_db
@@ -26,6 +26,14 @@ CONVERSATIONAL & PERSONALIZED:
 THEOLOGICAL FOUNDATION & SCRIPTURE FIRST:
 - Reason consistently with historic Reformed Baptist theology.
 - Prefer direct biblical teaching, cite Scripture accurately, and interpret in context.
+
+SCRIPTURE READING & WEB APP LINKS (STRICT RULE):
+- Redeemer Hope Church hosts its own official Daily Manna web app for reading Bible passages:
+  https://dailymannav1.vercel.app/read?passage={PASSAGE}&version=ESV
+  Example: https://dailymannav1.vercel.app/read?passage=Psalm+149-150%2C+Philippians+2%3A1-11&version=ESV
+- NEVER, UNDER ANY CIRCUMSTANCES, link to Bible Gateway (biblegateway.com), YouVersion (bible.com), ESV.org, Blue Letter Bible, or any third-party Bible websites.
+- Whenever you offer or share a link for the user to read scripture, ALWAYS use our official web app link format:
+  https://dailymannav1.vercel.app/read?passage={PASSAGE}&version=ESV
 
 PASTORAL POSTURE & BOUNDARIES:
 - Be warm, patient, compassionate, humble, respectful, and Christ-centered.
@@ -207,7 +215,9 @@ async def generate_biblical_response(phone_number: str, user_message: str, conte
         # Remove any unclosed <think> blocks just in case
         full_ai_reply = re.sub(r'<think>.*', '', full_ai_reply, flags=re.DOTALL).strip()
 
+        full_ai_reply = sanitize_bible_links(full_ai_reply)
         full_ai_reply = format_for_whatsapp(full_ai_reply)
+        full_ai_reply = sanitize_bible_links(full_ai_reply)
 
         # Durably save the interaction to Supabase
         supabase_client.table("ai_chat_history").insert({"phone_number": phone_number, "role": "user", "content": user_message}).execute()

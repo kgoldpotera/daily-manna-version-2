@@ -1,4 +1,69 @@
 import re
+import os
+import urllib.parse
+
+def sanitize_bible_links(text: str) -> str:
+    """
+    Scans text for any external Bible links (Bible Gateway, Bible.com, ESV.org, YouVersion, Blue Letter Bible, etc.)
+    and automatically transforms them into the official Daily Manna web app URL:
+    https://dailymannav1.vercel.app/read?passage={passage}&version=ESV
+    """
+    if not text:
+        return ""
+
+    web_app_url = os.getenv("WEB_APP_URL", "https://dailymannav1.vercel.app").rstrip("/")
+
+    # 1. Replace Bible Gateway passage links
+    def replace_bg(match):
+        full_url = match.group(0)
+        trailing = ""
+        while full_url and full_url[-1] in [')', ']', '}', '.', ',', ';', '!', '?', '*']:
+            trailing = full_url[-1] + trailing
+            full_url = full_url[:-1]
+
+        parsed = urllib.parse.urlparse(full_url)
+        qs = urllib.parse.parse_qs(parsed.query)
+        search = qs.get("search", [""])[0]
+        version = qs.get("version", ["ESV"])[0]
+
+        target_version = "KJV" if version.upper() == "KJV" else "ESV"
+
+        if search:
+            clean_search = urllib.parse.quote_plus(search)
+            return f"{web_app_url}/read?passage={clean_search}&version={target_version}{trailing}"
+        return f"{web_app_url}{trailing}"
+
+    text = re.sub(r'https?://(?:www\.)?biblegateway\.com[^\s<>"\'*]*', replace_bg, text, flags=re.IGNORECASE)
+
+    # 2. Replace esv.org passage links
+    def replace_esv(match):
+        full_url = match.group(0)
+        trailing = ""
+        while full_url and full_url[-1] in [')', ']', '}', '.', ',', ';', '!', '?', '*']:
+            trailing = full_url[-1] + trailing
+            full_url = full_url[:-1]
+
+        parsed = urllib.parse.urlparse(full_url)
+        path = parsed.path.strip('/')
+        if path:
+            clean_passage = urllib.parse.quote_plus(path.replace('+', ' '))
+            return f"{web_app_url}/read?passage={clean_passage}&version=ESV{trailing}"
+        return f"{web_app_url}{trailing}"
+
+    text = re.sub(r'https?://(?:www\.)?esv\.org[^\s<>"\'*]*', replace_esv, text, flags=re.IGNORECASE)
+
+    # 3. Replace generic external bible websites
+    def replace_generic_bible(match):
+        full_url = match.group(0)
+        trailing = ""
+        while full_url and full_url[-1] in [')', ']', '}', '.', ',', ';', '!', '?', '*']:
+            trailing = full_url[-1] + trailing
+            full_url = full_url[:-1]
+        return f"{web_app_url}{trailing}"
+
+    text = re.sub(r'https?://(?:www\.)?(?:bible\.com|youversion\.com|blueletterbible\.org|biblehub\.com)[^\s<>"\'*]*', replace_generic_bible, text, flags=re.IGNORECASE)
+
+    return text
 
 def normalize_phone_number(raw_number: str) -> str:
     """
@@ -21,9 +86,12 @@ def format_for_whatsapp(text: str, strip_all_asterisks: bool = True) -> str:
     """
     Converts standard Markdown (tables, headers, double asterisks, horizontal rules)
     into clean, natural, WhatsApp-friendly formatted text without unwanted asterisks.
+    Also ensures any Bible references link strictly to the official Daily Manna web app.
     """
     if not text:
         return ""
+
+    text = sanitize_bible_links(text)
 
     lines = text.splitlines()
     output_lines = []
@@ -109,7 +177,7 @@ def format_for_whatsapp(text: str, strip_all_asterisks: bool = True) -> str:
 
     result = "\n".join(output_lines)
     result = re.sub(r'\n{3,}', '\n\n', result)
-    return result.strip()
+    return sanitize_bible_links(result.strip())
 
 
 def split_long_message(text: str, max_chars: int = 1200) -> list[str]:

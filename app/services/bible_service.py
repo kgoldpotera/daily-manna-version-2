@@ -1,4 +1,6 @@
+import os
 import json
+import urllib.parse
 from datetime import datetime
 from typing import Dict, Any
 from pathlib import Path
@@ -50,11 +52,12 @@ class BibleService:
                     "link": self._generate_bible_link(reading_text, "ESV")
                 }
             else:
+                web_app_url = os.getenv("WEB_APP_URL", "https://dailymannav1.vercel.app").rstrip("/")
                 return {
                     "day": day,
                     "date": f"Day {day}",
                     "reading": "🎉 Congratulations! You've completed the reading plan!",
-                    "link": "https://www.bible.com"
+                    "link": web_app_url
                 }
         except Exception as e:
             print(f"❌ Error getting reading for day {day}: {e}")
@@ -74,15 +77,16 @@ class BibleService:
             clean_ref = urllib.parse.quote_plus(reference)
             return f"{web_app_url}/read?passage={clean_ref}&version={version}"
         except Exception:
-            return "https://www.bible.com"
+            return os.getenv("WEB_APP_URL", "https://dailymannav1.vercel.app").rstrip("/")
     
     def _get_fallback_reading(self, day: int) -> Dict[str, Any]:
         """Fallback reading when there's an error"""
+        web_app_url = os.getenv("WEB_APP_URL", "https://dailymannav1.vercel.app").rstrip("/")
         return {
             "day": day,
             "date": f"Day {day}",
             "reading": "John 3:16 - For God so loved the world that he gave his one and only Son...",
-            "link": "https://www.bible.com"
+            "link": f"{web_app_url}/read?passage=John+3%3A16&version=ESV"
         }
     
     def format_reading_message(self, reading_data: Dict[str, Any], user_name: str = "Friend") -> str:

@@ -2,7 +2,7 @@ import os
 import asyncio
 from openai import AsyncOpenAI
 from app.services.whatsapp import send_text_message, get_bot_phone_number
-from app.core.utils import format_for_whatsapp, split_long_message
+from app.core.utils import format_for_whatsapp, split_long_message, sanitize_bible_links
 from app.services.ai_assistant import SYSTEM_PROMPT
 
 
@@ -95,7 +95,9 @@ async def handle_group_message(actual_sender: str, group_id: str, text_body: str
             max_tokens=500
         )
         ai_reply = response.choices[0].message.content or ""
+        ai_reply = sanitize_bible_links(ai_reply)
         ai_reply = format_for_whatsapp(ai_reply)
+        ai_reply = sanitize_bible_links(ai_reply)
 
         # Get bot number for private DM link
         bot_phone = await get_bot_phone_number()

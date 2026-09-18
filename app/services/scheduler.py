@@ -153,7 +153,8 @@ Ask the AI Bible Assistant about today's reading. Explore the Scriptures, ask qu
 📖 365 DAYS • ONE BIBLE • ONE JOURNEY
 Keep reading. Keep praying. Keep growing."""
 
-    from app.core.utils import split_long_message
+    from app.core.utils import split_long_message, sanitize_bible_links
+    broadcast_text = sanitize_bible_links(broadcast_text)
     chunks = split_long_message(broadcast_text, max_chars=4096)
 
     print(f"Broadcasting to {len(groups_resp.data)} groups ({len(chunks)} message parts)...")

@@ -20,6 +20,7 @@ class Settings:
     GROQ_MODELS: str = os.getenv("GROQ_MODELS", "openai/gpt-oss-120b,openai/gpt-oss-20b,qwen/qwen3.6-27b")
     
     # Application Configuration
+    WEB_APP_URL: str = os.getenv("WEB_APP_URL", "https://dailymannav1.vercel.app").rstrip("/")
     APP_SECRET: str = os.getenv("APP_SECRET", "default_secret_key")
     WEBHOOK_SECRET: str = os.getenv("WEBHOOK_SECRET", "daily_manna_secret_token_123")
     DEBUG: bool = os.getenv("DEBUG", "False").lower() == "true"
